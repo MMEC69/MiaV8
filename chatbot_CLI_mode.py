@@ -58,22 +58,23 @@ def get_response(intents_list, intents_json):
     return result
 
 
-def pass_response(ints):
+def pass_response(message):
+    ints = predict_class(message)
     result = get_response(ints, intents)
     if result == "date_69":
         result = mf.today_date()
     if result == "time_69":
         result = mf.time_now()
     if result == "wiki_search_89":
-        result = mf.search_wikipedia(ints)
+        result = mf.search_wikipedia(message)
     if result == "youtube_open_98":
         result = mf.open_youtube()
     if result == "youtube_search_98":
-        result = mf.search_youtube(ints)
+        result = mf.search_youtube(message)
     if result == "google_open_52":
         result = mf.open_google()
     if result == "google_search_52":
-        result = mf.search_google(ints)
+        result = mf.search_google(message)
     if result == "gmail_search_42":
         result = mf.open_gmail()
     if result == "github_open_11":
@@ -133,10 +134,8 @@ print("Mia is waiting for you attention!")
 
 while True:
     message = input("You: ")
-    ints = predict_class(message)
-    # res = get_response(ints, intents)
-    res = pass_response(ints)
-    print("Mia: " +res)
+    result = pass_response(message)
+    print("Mia: " +result)
 
 
 
