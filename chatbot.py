@@ -81,6 +81,31 @@ def pass_response(ints, intents):
         result = mf.search_stackoverflow()
     if result == "calculate_90":
         result = mf.calculate(message)
+    if result == "open_calculator_67":
+        result = mf.open_calculator()
+    if result == "open_snipping_tool_65":
+        result = mf.open_snipping_tool()
+    if result == "open_paint_34":
+        result = mf.open_paint()
+    if result == "open_notepad_36":
+        result = mf.open_notepad()
+    if result == "open_word_1":
+        result = mf.open_word()
+    if result == "open_excel_2":
+        result = mf.open_excel()
+    if result == "open_powerpoint_3":
+        result = mf.open_powerpoint()
+    if result == "open_outlook_4":
+        result = mf.open_outlook()
+    if result == "open_chrome_5":
+        result = mf.open_chrome()
+    if result == "open_skype_6":
+        result = mf.open_skype_for_business()
+    if result == "open_pycharm_7":
+        result = mf.open_pycharm_com_e()
+    if result == "open_steam_8":
+        result = mf.open_steam()
+
 
     return result
 

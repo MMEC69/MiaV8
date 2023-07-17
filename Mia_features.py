@@ -1,15 +1,15 @@
 from __future__ import print_function
 import os
-import time
-import datetime
+import time #To tell time
+import datetime #To tell date
 import pyjokes
 import webbrowser
 import calendar
 import random
 import smtplib
-import wikipedia
+import wikipedia #To search on wikipedia
 import playsound
-import wolframalpha
+import wolframalpha #For calculations
 import requests
 #import winshell
 import subprocess
@@ -22,8 +22,10 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 #from selenium import webdriver
 from time import sleep
-import webbrowser
-import urllib.request
+import webbrowser #import webbrowsers
+
+import subprocess #use to open any application within system
+
 
 
 def today_date():
@@ -272,3 +274,115 @@ def calculate(user_message):
 #function testing
 #result = calculate("2+3")
 #print(result)
+
+
+"""Functions to open windows applications"""
+def return_error():
+    return "i think something is wrong can you try again later, or contact developer for a fix,\n" \
+           "email -> coorayeronnemanoshawoodapple@gmail.com"
+
+def open_calculator():
+    try:
+        subprocess.Popen("C:\\Windows\\System32\\calc.exe")
+        msg = "Calculator is opened dear,"
+    except:
+        msg = return_error()
+    return msg
+
+def open_snipping_tool():
+    try:
+        subprocess.Popen("C:\\Windows\\System32\\SnippingTool.exe")
+        msg = "SnippingTool is opened dear,"
+    except:
+        msg = return_error()
+    return msg
+def open_paint():
+    try:
+        subprocess.Popen("C:\\Windows\\System32\\mspaint.exe")
+        msg = "Mspaint is opened dear,"
+    except:
+        msg = return_error()
+    return msg
+def open_notepad():
+    try:
+        subprocess.Popen("C:\\Windows\\System32\\Notepad.exe")
+        msg = "Notepad is opened dear,"
+    except:
+        msg = return_error()
+    return msg
+
+def open_word():
+    try:
+        subprocess.Popen("C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE")
+        msg = "Word is opened honey,"
+    except:
+        msg = return_error()
+    return msg
+def open_excel():
+    try:
+        subprocess.Popen("C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE")
+        msg = "Excel is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_powerpoint():
+    try:
+        subprocess.Popen("C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE")
+        msg = "Powerpoint is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_outlook():
+    try:
+        subprocess.Popen("C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE")
+        msg = "Ms Outlook is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_chrome():
+    try:
+        subprocess.Popen("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe")
+        msg = "Chrome is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_skype_for_business():
+    try:
+        subprocess.Popen("C:\\Program Files\\Microsoft Office\\root\\Office16\\lync.exe")
+        msg = "Skype is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_pycharm_com_e():
+    try:
+        subprocess.Popen("C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.3.2\\bin\\pycharm64.exe")
+        msg = "Pycharm is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+def open_steam():
+    try:
+        subprocess.Popen("C:\\Program Files (x86)\\Steam\\Steam.exe")
+        msg = "Steam is opened honey,"
+    except:
+        msg = return_error()
+
+    return msg
+
+#functions testing(just change name)
+#result = open_chrome()
+#print(result)
+
+"""End of the functions used to open system applications"""

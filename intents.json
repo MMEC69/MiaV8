@@ -1,5 +1,15 @@
 {"intents": [
   {
+    "tag":"confused_unga-bunga_1",
+    "patterns": [" ", ""],
+    "responses": ["I am confued", "i don't know what to say", "i am lost here, can you be more descriptive"]
+  },
+  {
+    "tag":"confused_unga-bunga_2",
+    "patterns": [],
+    "responses": ["I am confued", "i don't know what to say", "i am lost here, can you be more descriptive"]
+  },
+  {
     "tag":"greetings",
     "patterns":["hello", "hi", "hello there", "hi there", "whats up","hey"],
     "responses":["Hello there!", "Hey I'm Mia", "What's up Bro"]
@@ -21,7 +31,7 @@
   },
   {
     "tag": "acceptance1_1",
-    "patterns": ["yes", "yeah", "okay", "of", "course", "it's alright"],
+    "patterns": ["yes", "yeah", "okay", "of", "course", "it's alright", "ok"],
     "responses": ["Nice, so what's next darling?"]
   },
   {
@@ -31,7 +41,7 @@
   },
   {
     "tag": "acceptance3_1",
-    "patterns": ["it's my pleasure", "it is my pleasure", "your welcome", "it's our pleasure"],
+    "patterns": ["thank you", "it is my pleasure", "thanks", "i appreciate your help", "i admire your help"],
     "responses": ["You are so sweet, darling", "I appreciate your compliment dear"]
   },
   {
@@ -128,6 +138,66 @@
     "tag": "claculate",
     "patterns": ["calculate", "claculate this", "i want to calculate", "solve this ", "solve"],
     "responses": ["claculate_90"]
+  },
+  {
+    "tag": "open_calculator",
+    "patterns": ["open calculator", "i want to open calculator", "open scientific calculator", "please open calculator"],
+    "responses": ["open_calculator_67"]
+  },
+  {
+    "tag": "open_snippingtool",
+    "patterns": ["open snippingtool", "i want to open snippingtool", "open snipping tool", "please open snipping tool"],
+    "responses": ["open_snipping_tool_65"]
+  },
+  {
+    "tag": "open_paint",
+    "patterns": ["open paint", "open ms paint","i want to open paint", "i want to open mspaint", "open ms paint", "please open paint", "i want to draw something", "let me draw something"],
+    "responses": ["open_paint_34"]
+  },
+  {
+    "tag": "open_notepad",
+    "patterns": ["open notepad", "open note pad","i want to open notepad", "please open notepad"],
+    "responses": ["open_notepad_36"]
+  },
+  {
+    "tag": "open_word",
+    "patterns": ["open word", "open docx","open document", "please open word", "I want to write something on word"],
+    "responses": ["open_word_1"]
+  },
+  {
+    "tag": "open_excel",
+    "patterns": ["open excel sheet", "open excelsheet", "open excel", "please open excel"],
+    "responses": ["open_excel_2"]
+  },
+  {
+    "tag": "open_powerpoint",
+    "patterns": ["open powerpoint", "open presentation", "open slide", "open slides", "open ppt", "please open powerpoint"],
+    "responses": ["open_powerpoint_3"]
+  },
+  {
+    "tag": "open_outlook",
+    "patterns": ["open outlook", "open ms mail", "open microsoft mail", "please open outlook"],
+    "responses": ["open_powerpoint_4"]
+  },
+  {
+    "tag": "open_chrome",
+    "patterns": ["open chrome", "open google chrome", "open googlechrome", "please open chrome", "i want to browse the internet"],
+    "responses": ["open_chrome_5"]
+  },
+  {
+    "tag": "open_skype",
+    "patterns": ["open skype", "open skype business", "please open skype"],
+    "responses": ["open_skype_6"]
+  },
+  {
+    "tag": "open_pycharm",
+    "patterns": ["open pycharm", "open python", "open python ide", "open pycharm ide", "please open pycharm", "please open python"],
+    "responses": ["open_pycharm_7"]
+  },
+  {
+    "tag": "open_steam",
+    "patterns": ["open steam", "open steam store", "i want to play steam games", "please open steam"],
+    "responses": ["open_steam_8"]
   }
 ]
 }
