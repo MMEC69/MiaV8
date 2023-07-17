@@ -1,17 +1,29 @@
+#testing email sending
+#Successed -> YES
 import os
 from email.message import EmailMessage
 import ssl
 import smtplib
 
-email_sender = 'coorayeronnemanoshawoodapple@gmail.com'
+#email_sender = 'coorayeronnemanoshawoodapple@gmail.com'
 
-email_password = os.environ.get('pw')
+email_sender = input("give me the username (with user@sample.com): ")
 
-email_receiver = 'coorayeronnemanoshapineapple@gmail.com'
+#email_password = 'fljihrfefmydrskc'
 
-subject = "subject title"
+email_password = input("give me the password: ") #give your custome password for app created from your account
 
-body = "info mation regarding email"
+#email_receiver = 'coorayeronnemanoshapineapple@gmail.com'
+
+email_receiver = input("give me receiver (with user@sample.com): ")
+
+#subject = "subject title"
+
+subject = input("state the subject: ")
+
+#body = "info mation regarding email"
+
+body = input("give the message: ")
 
 em = EmailMessage()
 
