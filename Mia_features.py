@@ -23,7 +23,7 @@ from google.auth.transport.requests import Request
 #from selenium import webdriver
 from time import sleep
 import webbrowser #import webbrowsers
-
+from geopy.geocoders import Nominatim #provide current location
 import subprocess #use to open any application within system
 
 
@@ -276,7 +276,7 @@ def calculate(user_message):
 #print(result)
 
 
-"""Functions to open windows applications"""
+#"""Functions to open windows applications"""
 def return_error():
     return "i think something is wrong can you try again later, or contact developer for a fix,\n" \
            "email -> coorayeronnemanoshawoodapple@gmail.com"
@@ -385,4 +385,176 @@ def open_steam():
 #result = open_chrome()
 #print(result)
 
-"""End of the functions used to open system applications"""
+#"""End of the functions used to open system applications"""
+
+#base function
+
+#"""Current location identifies"""
+def get_current_ip():
+    try:
+        r = requests.get("https://get.geojs.io/")
+
+        ip_request = requests.get("https://get.geojs.io/v1/ip.json")
+        ip_address = ip_request.json()['ip']
+        return (ip_address)
+    except:
+        msg = return_error()
+
+    return msg
+def get_current_location_information():
+    try:
+        ip_address = get_current_ip()
+
+        url = "https://get.geojs.io/v1/ip/geo/" +ip_address +".json"
+        geo_request = requests.get(url)
+        geo_data = geo_request.json()
+        return(geo_data)
+
+    except:
+        msg = return_error()
+
+    return msg
+
+def get_current_city():
+    try:
+        current_location_information_data = get_current_location_information()
+        current_country = (current_location_information_data['country'])
+        current_city = (current_location_information_data['city'])
+        return("You are currently in "+current_city +", " +current_country +".")
+    except:
+        msg = return_error()
+
+    return msg
+
+def get_current_city_only():
+    try:
+        current_location_information_data = get_current_location_information()
+        current_city = (current_location_information_data['city'])
+        return(current_city)
+    except:
+        msg = "colombo"
+
+    return msg
+
+def get_current_timezone():
+    try:
+        current_location_information_data = get_current_location_information()
+        current_timezone = (current_location_information_data['timezone'])
+        return ("your current time zone is " +current_timezone)
+    except:
+        msg = return_error()
+
+    return msg
+
+def get_current_country_code():
+    try:
+        current_location_information_data = get_current_location_information()
+        current_country_code = (current_location_information_data['country_code3'])
+        return ("your current country code is " +current_country_code)
+    except:
+        msg = return_error()
+
+    return msg
+
+#functions testing(just change name)
+#result = get_current_country_code()
+#print(result)
+
+#"""End of current location identifies"""
+
+#"""Weather details"""
+
+def get_current_weather_parameters():
+    try:
+        api_key = "3e826e0f9e9479c77abab338620624bd"
+        base_url = "https://api.openweathermap.org/data/2.5/weather?"
+        current_city_name = get_current_city_only()
+        complete_url = base_url + "appid=" + api_key + "&q=" + current_city_name
+        response = requests.get(complete_url)
+        return response.json()
+    except:
+        msg = return_error()
+
+    return msg
+
+def get_current_weather():
+    try:
+        x = get_current_weather_parameters()
+        current_city_name = get_current_city_only()
+        if x["cod"] != "404":
+            y = x["main"]
+            current_temperature = y["temp"]
+            current_temperature = current_temperature - 273.15
+            current_temperature = int(current_temperature)
+            current_humidity = y["humidity"]
+            z = x["weather"]
+            weather_description = z[0]["description"]
+            return ("It will be about " + str(current_temperature) + " Celcius" + " in " +current_city_name
+                    +"\nHumidity is around " +str(current_humidity) +"%"
+                    +"\n" +current_city_name +" is having a " + str(weather_description)) +" day."
+    except:
+        msg = return_error()
+
+    return msg
+def get_current_temprature():
+    try:
+        x = get_current_weather_parameters()
+        current_city_name = get_current_city_only()
+        if x["cod"] != "404":
+            y = x["main"]
+            current_temperature = y["temp"]
+            current_temperature = current_temperature - 273.15
+            current_temperature = int(current_temperature)
+            return "Current temp in " +current_city_name +" is " +str(current_temperature) +" Celcius"
+    except:
+        msg = return_error()
+
+    return msg
+
+#functions testing(just change name)
+#result = get_current_temprature()
+#print(result)
+
+#"""End of weather details"""
+
+#"""Pc shutdown, restart, sleep functions"""
+def pc_shutdown():
+    try:
+        seconds = 10
+        strOne = "shutdown /s /t"
+        strTwo = str(seconds)
+        str = strOne+strTwo
+
+        os.system(str)
+        return ("Your system is going to shut down in 10 seconds, starting from now")
+
+    except:
+        msg = return_error()
+        return msg
+
+def pc_restart():
+    try:
+        seconds = 10
+        strOne = "shutdown /r /t"
+        strTwo = str(seconds)
+        str = strOne + strTwo
+
+        os.system(str)
+        return ("Your system is going to shut down in 10 seconds, starting from now")
+
+    except:
+        msg = return_error()
+        return msg
+
+#functions testing(just change name)
+#result = get_current_temprature()
+#print(result)
+
+#"""End of Pc shutdown, restart, sleep functions"""
+
+
+#"""Sending an email functions"""
+
+
+
+#""" End of sending an email functions"""

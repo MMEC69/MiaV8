@@ -9,6 +9,8 @@ from keras.models import load_model
 
 import Mia_features as mf
 
+bot_name = "Mia"
+
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
@@ -55,22 +57,30 @@ def get_response(intents_list, intents_json):
             break
     return result
 
+def get_message(message):
+    ints = predict_class(message)
+    # res = get_response(ints, intents)
+    result = pass_response(ints, intents)
+    return result
+
+
 def pass_response(ints, intents):
+    #ints = predict_class(ints)
     result = get_response(ints, intents)
     if result == "date_69":
         result = mf.today_date()
     if result == "time_69":
         result = mf.time_now()
     if result == "wiki_search_89":
-        result = mf.search_wikipedia(message)
+        result = mf.search_wikipedia(ints)
     if result == "youtube_open_98":
         result = mf.open_youtube()
     if result == "youtube_search_98":
-        result = mf.search_youtube(message)
+        result = mf.search_youtube(ints)
     if result == "google_open_52":
         result = mf.open_google()
     if result == "google_search_52":
-        result = mf.search_google(message)
+        result = mf.search_google(ints)
     if result == "gmail_search_42":
         result = mf.open_gmail()
     if result == "github_open_11":
@@ -80,7 +90,7 @@ def pass_response(ints, intents):
     if result == "stackoverflow_search_14":
         result = mf.search_stackoverflow()
     if result == "calculate_90":
-        result = mf.calculate(message)
+        result = mf.calculate(ints)
     if result == "open_calculator_67":
         result = mf.open_calculator()
     if result == "open_snipping_tool_65":
@@ -105,17 +115,35 @@ def pass_response(ints, intents):
         result = mf.open_pycharm_com_e()
     if result == "open_steam_8":
         result = mf.open_steam()
-
+    if result == "get_current_ip_90":
+        result = mf.get_current_ip()
+    if result == "get_current_city_35":
+        result = mf.get_current_city()
+    if result == "get_current_country_code_11":
+        result = mf.get_current_country_code()
+    if result == "get_current_timezone_23":
+        result = mf.get_current_timezone()
+    if result == "get_current_weather_45":
+        result = mf.get_current_weather()
+    if result == "get_current_temperature_41":
+        result = mf.get_current_temprature()
+    if result == "pc_shutdown_17":
+        result = mf.pc_shutdown()
+    if result == "pc_restart_18":
+        result = mf.pc_restart()
 
     return result
 
-#please delete chatbot_model.h5, classes.pkl, words.pkl and rerun training.py if intents.json file updated
+#please delete chatbot_model.h5, classes.pkl, words.pkl and rerun training.py if intents.json file updated and make sure to run train afterwards
 print("Mia is waiting for you attention!")
 
-while True:
-    message = input("You: ")
-    ints = predict_class(message)
-    #res = get_response(ints, intents)
-    res = pass_response(ints, intents)
-    print("Mia: "+res)
+"""
+    while True:
+        message = input("You: ")
+        ints = predict_class(message)
+        #res = get_response(ints, intents)
+        res = pass_response(ints, intents)
+        print("Mia: "+res)
+
+"""
 

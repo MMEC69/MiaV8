@@ -198,6 +198,46 @@
     "tag": "open_steam",
     "patterns": ["open steam", "open steam store", "i want to play steam games", "please open steam"],
     "responses": ["open_steam_8"]
+  },
+  {
+    "tag": "get_current_ip",
+    "patterns": ["give me my ip", "give me my ap address", "i want to know my ip address", "internet provider address", "what is my ip address"],
+    "responses": ["get_current_ip_90"]
+  },
+  {
+    "tag": "get_current_city",
+    "patterns": ["where am i now", "i want to know my location", "what is my location", "which city i am now", "my current location", "my current whereabouts", "give me my location"],
+    "responses": ["get_current_city_35"]
+  },
+  {
+    "tag": "get_current_country_code",
+    "patterns": ["my country code", "give me current country code", "i want to know my country code", "please tell me my country code"],
+    "responses": ["get_current_country_code_11"]
+  },
+  {
+    "tag": "get_current_timezone",
+    "patterns": ["my current time zone", "my current timezone", "give me mt current time zone", "I want to know my timezone", "can i get my time zone"],
+    "responses": ["get_current_timezone_23"]
+  },
+  {
+    "tag": "get_current_weather",
+    "patterns": ["weather", "can you tell me the weather please", "i want to know weather", "is it outside", "how is the weather today", "can you give me the weather"],
+    "responses": ["get_current_weather_45"]
+  },
+  {
+    "tag": "get_current_temperature",
+    "patterns": ["temp", "current temperature please", "how hot is it outside", "how is the temperature", "how is the weather today"],
+    "responses": ["get_current_temperature_41"]
+  },
+  {
+    "tag": "pc_shutdown",
+    "patterns": ["shut down pc", "shutdown pc", "i want you to shutdown pc", "turn off my pc"],
+    "responses": ["pc_shutdown_17"]
+  },
+  {
+    "tag": "pc_restart",
+    "patterns": ["restart pc", "restart my pc", "i want you to restart pc"],
+    "responses": ["pc_restart_18"]
   }
 ]
 }
