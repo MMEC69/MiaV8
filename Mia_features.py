@@ -25,6 +25,9 @@ from time import sleep
 import webbrowser #import webbrowsers
 from geopy.geocoders import Nominatim #provide current location
 import subprocess #use to open any application within system
+import ssl #for emails ending
+from email.message import EmailMessage #for emails ending
+import smtplib #for emails ending
 
 
 
@@ -554,6 +557,67 @@ def pc_restart():
 
 
 #"""Sending an email functions"""
+    #ui -> user input
+
+def return_error_for_email():
+    return "You might have to check the username and password whether matches or not. \nMake sure to equip your account with 2step verifiaction and to use a generated app app password instead of user password."
+def sending_email_part1():
+    return "Enter your email     : "
+def sending_email_part2(email_sender_ui):
+    global email_sender
+    email_sender = email_sender_ui
+    return "Enter your password  : "
+
+def sending_email_part3(email_password_ui):
+    global email_password
+    email_password = email_password_ui
+    return "Enter receivers email: "
+
+def sending_email_part4(email_receivers_ui):
+    global email_receiver
+    email_receiver = email_receivers_ui
+    return "Enter subject        : "
+
+def sending_email_part5(subject_ui):
+    global subject
+    subject = subject_ui
+    return "Enter body           : "
+
+def sending_email_part6(body_ui):
+    try:
+        global body
+        body = body_ui
+
+        em = EmailMessage()
+
+        em['From'] = email_sender
+
+        em['To'] = email_receiver
+
+        em['Subject'] = subject
+
+        em.set_content(body)
+
+        context = ssl.create_default_context()
+
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
+            smtp.login(email_sender, email_password)
+            smtp.sendmail(email_sender, email_receiver, em.as_string())
+
+        email_parameter_cleaning()
+
+        return "Email sent successfully."
+    except:
+        email_parameter_cleaning()
+        return return_error_for_email()
+
+
+def email_parameter_cleaning():
+    email_sender = ""
+    email_receiver = ""
+    subject = ""
+    body = ""
+
 
 
 

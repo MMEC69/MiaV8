@@ -58,80 +58,178 @@ def get_response(intents_list, intents_json):
     return result
 
 message = ""
+previous_response = ""
 
 def get_message(message):
     mia_respond = pass_response(message)
     return mia_respond
 
+
+
 def pass_response(message):
     ints = predict_class(message)
     result = get_response(ints, intents)
-    if result == "date_69":
-        result = mf.today_date()
-    if result == "time_69":
-        result = mf.time_now()
-    if result == "wiki_search_89":
-        result = mf.search_wikipedia(message)
-    if result == "youtube_open_98":
-        result = mf.open_youtube()
-    if result == "youtube_search_98":
-        result = mf.search_youtube(message)
-    if result == "google_open_52":
-        result = mf.open_google()
-    if result == "google_search_52":
-        result = mf.search_google(message)
-    if result == "gmail_search_42":
-        result = mf.open_gmail()
-    if result == "github_open_11":
-        result = mf.open_github()
-    if result == "stackoverflow_open_13":
-        result = mf.open_stackoverflow()
-    if result == "stackoverflow_search_14":
-        result = mf.search_stackoverflow()
-    if result == "calculate_90":
-        result = mf.calculate(ints)
-    if result == "open_calculator_67":
-        result = mf.open_calculator()
-    if result == "open_snipping_tool_65":
-        result = mf.open_snipping_tool()
-    if result == "open_paint_34":
-        result = mf.open_paint()
-    if result == "open_notepad_36":
-        result = mf.open_notepad()
-    if result == "open_word_1":
-        result = mf.open_word()
-    if result == "open_excel_2":
-        result = mf.open_excel()
-    if result == "open_powerpoint_3":
-        result = mf.open_powerpoint()
-    if result == "open_outlook_4":
-        result = mf.open_outlook()
-    if result == "open_chrome_5":
-        result = mf.open_chrome()
-    if result == "open_skype_6":
-        result = mf.open_skype_for_business()
-    if result == "open_pycharm_7":
-        result = mf.open_pycharm_com_e()
-    if result == "open_steam_8":
-        result = mf.open_steam()
-    if result == "get_current_ip_90":
-        result = mf.get_current_ip()
-    if result == "get_current_city_35":
-        result = mf.get_current_city()
-    if result == "get_current_country_code_11":
-        result = mf.get_current_country_code()
-    if result == "get_current_timezone_23":
-        result = mf.get_current_timezone()
-    if result == "get_current_weather_45":
-        result = mf.get_current_weather()
-    if result == "get_current_temperature_41":
-        result = mf.get_current_temprature()
-    if result == "pc_shutdown_17":
-        result = mf.pc_shutdown()
-    if result == "pc_restart_18":
-        result = mf.pc_restart()
-
-    return result
+    global previous_response
+    while True:
+        if result == "send_email_0":
+            result = mf.sending_email_part1()
+            previous_response = result
+            return result
+            break
+        elif result == "date_69":
+            result = mf.today_date()
+            return result
+            break
+        elif result == "time_69":
+            result = mf.time_now()
+            return result
+            break
+        elif result == "wiki_search_89":
+            result = mf.search_wikipedia(message)
+            return result
+            break
+        elif result == "youtube_open_98":
+            result = mf.open_youtube()
+            return result
+            break
+        elif result == "youtube_search_98":
+            result = mf.search_youtube(message)
+            return result
+            break
+        elif result == "google_open_52":
+            result = mf.open_google()
+            return result
+            break
+        elif result == "google_search_52":
+            result = mf.search_google(message)
+            return result
+            break
+        elif result == "gmail_search_42":
+            result = mf.open_gmail()
+            return result
+            break
+        elif result == "github_open_11":
+            result = mf.open_github()
+            return result
+            break
+        elif result == "stackoverflow_open_13":
+            result = mf.open_stackoverflow()
+            return result
+            break
+        elif result == "stackoverflow_search_14":
+            result = mf.search_stackoverflow()
+            return result
+            break
+        elif result == "calculate_90":
+            result = mf.calculate(message)
+            return result
+            break
+        elif result == "open_calculator_67":
+            result = mf.open_calculator()
+            return result
+            break
+        elif result == "open_snipping_tool_65":
+            result = mf.open_snipping_tool()
+            return result
+            break
+        elif result == "open_paint_34":
+            result = mf.open_paint()
+            return result
+            break
+        elif result == "open_notepad_36":
+            result = mf.open_notepad()
+            return result
+            break
+        elif result == "open_word_1":
+            result = mf.open_word()
+            return result
+            break
+        elif result == "open_excel_2":
+            result = mf.open_excel()
+            return result
+            break
+        elif result == "open_powerpoint_3":
+            result = mf.open_powerpoint()
+            return result
+            break
+        elif result == "open_outlook_4":
+            result = mf.open_outlook()
+            return result
+            break
+        elif result == "open_chrome_5":
+            result = mf.open_chrome()
+            return result
+            break
+        elif result == "open_skype_6":
+            result = mf.open_skype_for_business()
+            return result
+            break
+        elif result == "open_pycharm_7":
+            result = mf.open_pycharm_com_e()
+            return result
+            break
+        elif result == "open_steam_8":
+            result = mf.open_steam()
+            return result
+            break
+        elif result == "get_current_ip_90":
+            result = mf.get_current_ip()
+            return result
+            break
+        elif result == "get_current_city_35":
+            result = mf.get_current_city()
+            return result
+            break
+        elif result == "get_current_country_code_11":
+            result = mf.get_current_country_code()
+            return result
+            break
+        elif result == "get_current_timezone_23":
+            result = mf.get_current_timezone()
+            return result
+            break
+        elif result == "get_current_weather_45":
+            result = mf.get_current_weather()
+            return result
+            break
+        elif result == "get_current_temperature_41":
+            result = mf.get_current_temprature()
+            return result
+            break
+        elif result == "pc_shutdown_17":
+            result = mf.pc_shutdown()
+            return result
+            break
+        elif result == "pc_restart_18":
+            result = mf.pc_restart()
+            return result
+            break
+        elif (previous_response == "Enter your email     : "):
+            result = mf.sending_email_part2(message)
+            previous_response = result
+            return result
+            break
+        elif (previous_response == "Enter your password  : "):
+            result = mf.sending_email_part3(message)
+            previous_response = result
+            return result
+            break
+        elif (previous_response == "Enter receivers email: "):
+            result = mf.sending_email_part4(message)
+            previous_response = result
+            return result
+            break
+        elif (previous_response == "Enter subject        : "):
+            result = mf.sending_email_part5(message)
+            previous_response = result
+            return result
+            break
+        elif (previous_response == "Enter body           : "):
+            result = mf.sending_email_part6(message)
+            previous_response = result
+            return result
+            break
+        return result
 
 #please delete chatbot_model.h5, classes.pkl, words.pkl and rerun training.py if intents.json file updated and make sure to run train afterwards
 print("Mia is waiting for you attention!")

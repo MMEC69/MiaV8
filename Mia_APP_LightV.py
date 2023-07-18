@@ -198,6 +198,8 @@ class MiaApplication:
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
+
+
         #main.speak(msg_returned_bot)
         #main.engine.runAndWait()
 

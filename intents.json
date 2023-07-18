@@ -137,7 +137,7 @@
   {
     "tag": "claculate",
     "patterns": ["calculate", "claculate this", "i want to calculate", "solve this ", "solve"],
-    "responses": ["claculate_90"]
+    "responses": ["calculate_90"]
   },
   {
     "tag": "open_calculator",
@@ -238,6 +238,11 @@
     "tag": "pc_restart",
     "patterns": ["restart pc", "restart my pc", "i want you to restart pc"],
     "responses": ["pc_restart_18"]
+  },
+  {
+    "tag": "send_email",
+    "patterns": ["i want to send an email", "send an email", "send a gmail", "I want to send a gmail"],
+    "responses": ["send_email_0"]
   }
 ]
 }
