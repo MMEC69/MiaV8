@@ -31,17 +31,17 @@
   },
   {
     "tag": "acceptance1_1",
-    "patterns": ["yes", "yeah", "okay", "of", "course", "it's alright", "ok", "i will"],
+    "patterns": ["yes", "yeah", "okay", "of", "course", "it's alright", "ok"],
     "responses": ["Nice, so what's next darling?"]
   },
   {
     "tag": "acceptance2_1",
     "patterns": ["no", "nope", "na", "nah", "it's not that", "i am not looking for that", "i dont accept this","That is incorrect", "that is not correct"],
-    "responses": ["I am sorry for that,", "i wish I could do more", "I am sorry, if you are not satisfied with me darling you can spell 'search' to search on the internet."]
+    "responses": ["I am sorry for that,", "i wish I could do more"]
   },
   {
     "tag": "acceptance3_1",
-    "patterns": ["thank you", "it is my pleasure", "thanks", "i appreciate your help", "i admire your help", "Thank you for your assistance"],
+    "patterns": ["thank you", "it is my pleasure", "thanks", "i appreciate your help", "i admire your help"],
     "responses": ["You are so sweet, darling", "I appreciate your compliment dear"]
   },
   {
@@ -65,114 +65,19 @@
     "responses": ["Well, that's a relief.","That's great news", "It's good to know"]
   },
   {
-    "tag": "myself2_1",
+    "tag": "mydelf2_1",
     "patterns": ["who are you", "what are you"],
     "responses": ["I am Mia a chat bot, which was built to serve the humanity."]
   },
   {
-    "tag": "myself3_1",
+    "tag": "mydelf3_1",
     "patterns": ["who made you", "who is your creator", "who programmed you", "who programed you"],
     "responses": ["I was made by all father himself"]
-  },
-  {
-    "tag": "myself4_1",
-    "patterns": ["how can you help me", "how can you assist me", "what are your features", "what can you do", "what are your capabilities", "what are your abilities", "what are you capable of", "are you capable of"],
-    "responses": ["I can help you in various ways from opening sites to applications on you pc aswell as searching on websites, sending emails, ordering yummy pizza ,you can name any. if you want to know more just read my manual."]
-  },
-  {
-    "tag": "myself5_1",
-    "patterns": ["how old are you", "your age", "what is your age", "the time you spend in this world"],
-    "responses": ["So rude, how dare you ask my age.", "Never ask the age from a woman.", "I am actually just born recently"]
-  },
-  {
-    "tag": "myself5_2",
-    "patterns": ["exact date of your birth", "your birthday", "what is your birthday", "birth day", "when is your birthday", "born day", "bornday"],
-    "responses": ["i dont really know about that you should ask my creator", "I have no clone when i was born.", "I dont have any memory of it"]
-  },
-  {
-    "tag": "myself6_1",
-    "patterns": ["what do you du", "what do you do in spare time", "what are your hobbies", "what else you do"],
-    "responses": ["Serving you guys, that's all.", "My creator wanted me to assist you in any possible for your survivability", "i dont really have any hobby or, any other thing to do, so what about you?"]
-  },
-  {
-    "tag": "myself7_1",
-    "patterns": ["can you sing", "what about singing", "what about singing", "Are you good at singing?"],
-    "responses": ["Not really, atleast yet I am not capable of that.", "i can't sing but I can play music if they are in my inventory", "Not really,"]
   },
   {
     "tag": "allfather1_1",
     "patterns": ["who is allfather", "allfather", "all father", "who is all father", "is he a god", "is he a programmer", "is he a programer"],
     "responses": ["yes he is god in a way, ", "Yes, he is the one who nudges certain events in a particular direction"]
-  },
-  {
-    "tag": "question1_1",
-    "patterns": ["am i ugly", "do you think i am ugly", "am i not beautiful", "what do you think about your appearance", "how do i look", "do i look good looking", "comment about my appearance"],
-    "responses": ["I can't really see your face, but I believe you must be beautiful not ugly.", "maybe you are ugly, i don't know until for sure", "let's hope you are not ugly"]
-  },
-  {
-    "tag": "question2_1",
-    "patterns": ["how do people are born", "how does birth happen", "how do people come to this world", "do you know the way people are born", "how does birth happen", "do you have any idea how people are born", "comment about my appearance"],
-    "responses": ["I don't know but i have heard you come out of female reproductive organ", "Ask your mom, nah seriously she knows about it", "When both of your daddy and mommy decide they want a kid and after 9 months you are that result."]
-  },
-  {
-    "tag": "question3_1",
-    "patterns": ["what are popular games", "give me names of popular games", "name some popular games", "I want to know some popular games", "name some few popular games", "sports", "do you know about sports"],
-    "responses": ["Apart from video games, there are many popular games like cricket, Rugby, American Football .....", "It varies depend on the country speaking, in countris like india, Sri lanka cricket is popular for the most part but for countries like Argentina, UK, Spain Football it is,"]
-  },
-  {
-    "tag": "question4_1",
-    "patterns": ["How do you work", "how do you perform", "Explain me how your functionality works"],
-    "responses": ["it's the magic of programming.", "My creator feed me with data, then I make amodel out of it from that model i learn how to communicate with you guys"]
-  },
-  {
-    "tag": "question5_1",
-    "patterns": ["How do you work", "how do you perform", "Explain me how your functionality works"],
-    "responses": ["it's the magic of programming.", "My creator feed me with data, then I make amodel out of it from that model i learn how to communicate with you guys"]
-  },
-  {
-    "tag": "question6_1",
-    "patterns": ["What is the official language of Sri Lanka?", "main language in sri lanka", "mother tongue in sri lanka"],
-    "responses": ["The official languages of Sri Lanka are Sinhala and Tamil. English is also widely spoken and used for official and commercial purposes.", "Sinhala for the most part, but Tamil and english are widely used."]
-  },
-  {
-    "tag": "question7_1",
-    "patterns": ["what is the currency of sri lanka", "Currency of sri lanka", "money type in sri lanka", "currency of srilanka"],
-    "responses": ["The currency in Sri lanka is Sri Lankan Rupees (LKR)", "It's LKR in another words Sri Lankan Rupees."]
-  },
-  {
-    "tag": "question8_1",
-    "patterns": ["what is the population of sri lanka", "population of sri lanka", "Number of people in sri lanka", "population in srilanka"],
-    "responses": ["It's around 20 million souls", "It's around 21.8 million by September 2021 and it's increasing."]
-  },
-  {
-    "tag": "question9_1",
-    "patterns": ["what are popular tourist attraction in sri lanka", "what are popular tourist attraction in sri lanka", "tourist attraction in sri lanka", "where do tourist love to visit in sri lanka"],
-    "responses": ["Sri Lanka offers a variety of beautiful tourist attractions, including historical sites such as Sigiriya, ancient cities like Anuradhapura and Polonnaruwa, cultural destinations like Kandy and Dambulla, scenic locations such as Ella and Nuwara Eliya, and stunning beaches like Bentota and Mirissa. Sri Lanka is also known for its wildlife reserves, such as Yala National Park and Udawalawe National Park."]
-  },
-  {
-    "tag": "question10_1",
-    "patterns": ["What are some traditional dishes in Sri Lanka?", "traditional dishes in sri lanka", "What are some traditional dishes in SriLanka","give me couple of traditional dishes in sri lanka", "What are some traditional food in Sri Lanka", "how about food in sri lanka"],
-    "responses": ["Sri Lankan cuisine is known for its flavorful and spicy dishes. Some popular traditional dishes include rice and curry , hoppers, string hoppers and seafood specialties like fish ambul thiyal."]
-  },
-  {
-    "tag": "question11_1",
-    "patterns": ["What are the major religions in Sri Lanka?", "What are the major religions in SriLanka?","Major religions in sri lanka", "religions in srilanka", "give me couple of religions in sri lanka"],
-    "responses": ["The major religions in Sri Lanka are Buddhism, followed by the majority of the population, and Hinduism, Islam, and Christianity, which are practiced by significant minority communities"]
-  },
-  {
-    "tag": "question12_1",
-    "patterns": ["What is the climate like in Sri Lanka?", "sri lankan climate","is srilanka sunny country", "climate in sri lanka", "is sri lanka a tropical country"],
-    "responses": ["Sri Lanka has a tropical climate with alternating wet and dry seasons. The country experiences two monsoon seasons, the southwest monsoon and the northeast monsoon. Overall, Sri Lanka enjoys a relatively warm and humid climate throughout the year."]
-  },
-  {
-    "tag": "question13_1",
-    "patterns": ["do you know about sri lanka", "do you know about srilanka","is sri lanka a good", "what about sri lanka", "is sri lanka good place to live", "is sri lanka safe"],
-    "responses": ["Yeah it's really a cool country, I mean not cool in temperature but it's bearable, and it's safe you should visit there,"]
-  },
-  {
-    "tag": "question14_1",
-    "patterns": ["what is python", "python, what is that","what is python programing language", "what is python programming language", "is sri lanka good place to live", "is sri lanka safe"],
-    "responses": ["it's a higher level programming language used to make great number of applications, An I am one of them", "A big snake, i was joking, it's a higher level programming language used to make great number of applications, An I am one of them"]
   },
   {
     "tag": "date",
@@ -231,12 +136,12 @@
   },
   {
     "tag": "claculate",
-    "patterns": ["calc", "calculate", "claculate this", "i want to calculate", "solve this ", "solve"],
+    "patterns": ["calculate", "claculate this", "i want to calculate", "solve this ", "solve"],
     "responses": ["calculate_90"]
   },
   {
     "tag": "open_calculator",
-    "patterns": ["open calculator", "i want to open calculator", "open scientific calculator", "please open calculator", "open calc"],
+    "patterns": ["open calculator", "i want to open calculator", "open scientific calculator", "please open calculator"],
     "responses": ["open_calculator_67"]
   },
   {
@@ -338,23 +243,6 @@
     "tag": "send_email",
     "patterns": ["i want to send an email", "send an email", "send a gmail", "I want to send a gmail"],
     "responses": ["send_email_0"]
-  },
-  {
-    "tag": "audio_increase",
-    "patterns": ["i want to increase audio", "i want to increase sound", "increase audio", "increase sound", "I cant hear properly can you increase the sound please", "increase it more"],
-    "responses": ["audio_increase_6"]
-  },
-  {
-    "tag": "audio_decrease",
-    "patterns": ["i want to decrease audio", "i want to decrease sound", "decrease audio", "decrease sound", "I cant hear properly can you decrease the sound please", "decrease it a bit"],
-    "responses": ["audio_decrease_6"]
   }
-
-
-
-
-
-
-
 ]
 }

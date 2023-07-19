@@ -28,6 +28,11 @@ import subprocess #use to open any application within system
 import ssl #for emails ending
 from email.message import EmailMessage #for emails ending
 import smtplib #for emails ending
+from ctypes import cast, POINTER
+from comtypes import CLSCTX_ALL #windows audio control
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume #windows audio control
+import math #windows audio control
+
 
 
 
@@ -619,6 +624,46 @@ def email_parameter_cleaning():
     body = ""
 
 
-
-
 #""" End of sending an email functions"""
+
+#"""Windoes volume control"""
+
+
+
+# Get default audio device using PyCAW
+def audio_increase():
+    devices = AudioUtilities.GetSpeakers()
+    interface = devices.Activate(
+        IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+    volume = cast(interface, POINTER(IAudioEndpointVolume))
+
+    # Get current volume
+    currentVolumeDb = volume.GetMasterVolumeLevel()
+
+    increasing_value = 6.0
+
+    volume.SetMasterVolumeLevel(currentVolumeDb + increasing_value, None)
+
+    return "Audio has been increased"
+
+def audio_decrease():
+    devices = AudioUtilities.GetSpeakers()
+    interface = devices.Activate(
+        IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+    volume = cast(interface, POINTER(IAudioEndpointVolume))
+
+    # Get current volume
+    currentVolumeDb = volume.GetMasterVolumeLevel()
+
+    increasing_value = 6.0
+
+    volume.SetMasterVolumeLevel(currentVolumeDb - increasing_value, None)
+
+    return "Audio has been decreased"
+
+#functions testing(just change name)
+#result = audio_decrease()
+#print(result)
+
+
+#""" End of windoes volume control"""

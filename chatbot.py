@@ -57,6 +57,7 @@ def get_response(intents_list, intents_json):
             break
     return result
 
+#global variables required for the below functions
 message = ""
 previous_response = ""
 
@@ -202,6 +203,14 @@ def pass_response(message):
             break
         elif result == "pc_restart_18":
             result = mf.pc_restart()
+            return result
+            break
+        elif result == "audio_increase_6":
+            result = mf.audio_increase()
+            return result
+            break
+        elif result == "audio_decrease_6":
+            result = mf.audio_decrease()
             return result
             break
         elif (previous_response == "Enter your email     : "):

@@ -1,3 +1,4 @@
+import os
 import random
 import json
 import pickle
@@ -28,6 +29,12 @@ words = [lemmatizer.lemmatize(word) for word in words if word not in ignoreLette
 words = sorted(set(words))
 
 classes = sorted(set(classes))
+
+try:
+    os.remove("words.pkl")
+    os.remove("classes.pkl")
+except:
+    print("")
 
 pickle.dump(words, open('words.pkl', 'wb'))
 pickle.dump(classes, open('classes.pkl', 'wb'))
@@ -64,7 +71,14 @@ sgd = tf.keras.optimizers.SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 hist = model.fit(np.array(trainX), np.array(trainY), epochs=200, batch_size=5, verbose=1)
+
+try:
+    os.remove("chatbot_model.h5")
+except:
+    print("")
+
 model.save('chatbot_model.h5', hist)
+
 print('Done')
 
 
