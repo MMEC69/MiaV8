@@ -186,7 +186,7 @@
   },
   {
     "tag": "wiki_search",
-    "patterns": ["according to wikipeida", "wikipedia", "wikipedia search", "i want to search on wikipedia about"],
+    "patterns": ["according to wikipeida", "wikipedia", "wikipedia search", "i want to search on wikipedia about", "tell me about according to wikipedia"],
     "responses": ["wiki_search_89"]
   },
   {

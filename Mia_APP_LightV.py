@@ -3,6 +3,9 @@ from PIL import Image, ImageTk
 import chatbot
 from chatbot import get_message, bot_name
 from itertools import count, cycle
+import TTS_pyttx as pyttx3tts
+import TTS_gtts as ttsg
+
 
 FG_Msg_Box = '#FFB6C1' #pink
 BG_Msg_Box = "#fdfdfd" #white
@@ -12,7 +15,9 @@ BG_Window = '#FFB6C1' #pink
 FONT = 'Helvetica 20'
 FONT_BOLD = 'Helvetica 20 bold'
 
+
 class MiaApplication:
+
     class ImageLabel(Label):
         """
         A Label that displays images, and plays them if they are gifs
@@ -199,9 +204,9 @@ class MiaApplication:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
 
+        #pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
+        ttsg.gTTS_TTspeech(msg_returned_bot)
 
-        #main.speak(msg_returned_bot)
-        #main.engine.runAndWait()
 
         self.text_widget.see(END)
         #This is to make sure chat is set to the bottom of the conversation
