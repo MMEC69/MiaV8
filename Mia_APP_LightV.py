@@ -15,7 +15,6 @@ BG_Window = '#FFB6C1' #pink
 FONT = 'Helvetica 20'
 FONT_BOLD = 'Helvetica 20 bold'
 
-
 class MiaApplication:
 
     class ImageLabel(Label):
