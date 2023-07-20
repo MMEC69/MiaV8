@@ -7,9 +7,10 @@ def generated_cleaner():
         os.remove("words.pkl")
         os.remove("classes.pkl")
         os.remove("chatbot_model.h5")
-        result1
+        os.remove("mia_speech.mp3")
+        return result1
 
     except:
-        result2
+        return result2
 
-generated_cleaner()
+print(generated_cleaner())
