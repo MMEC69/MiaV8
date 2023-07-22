@@ -121,6 +121,18 @@ def pass_response(message):
             result = mf.search_stackoverflow()
             return result
             break
+        elif result == "open_google_translate_59":
+            result = mf.open_google_translate()
+            return result
+            break
+        elif result == "open_whatsapp_666":
+            result = mf.open_whatsapp()
+            return result
+            break
+        elif result == "open_facebook_134":
+            result = mf.open_facebook()
+            return result
+            break
         elif result == "calculate_90":
             result = mf.calculate(message)
             return result

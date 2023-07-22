@@ -251,9 +251,6 @@ def open_stackoverflow():
     time.sleep(5)
     return ("Stackoverflow is opened dear,")
 
-#function testing
-#open_stackoverflow()
-#print(result)
 
 def search_stackoverflow(user_message):
     search_stackoverflow_url = "https://stackoverflow.com/search?q="
@@ -271,6 +268,44 @@ def search_stackoverflow(user_message):
 #function testing
 #search_stackoverflow("python library error")
 #print(result)
+def open_google_translate():
+    google_translate_url = "https://translate.google.com/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(google_translate_url)
+
+    except:
+        webbrowser.open_new_tab(google_translate_url)
+
+    time.sleep(5)
+    return ("Google translate is opened dear,")
+
+def open_whatsapp():
+    whatsapp_web_url = "https://web.whatsapp.com/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(whatsapp_web_url)
+
+    except:
+        webbrowser.open_new_tab(whatsapp_web_url)
+
+    time.sleep(5)
+    return ("Google translate is opened dear,")
+
+def open_facebook():
+    facebook_url = "https://www.facebook.com/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(facebook_url)
+
+    except:
+        webbrowser.open_new_tab(facebook_url)
+
+    time.sleep(5)
+    return ("Google translate is opened dear,")
 
 def calculate(user_message):
     app_id = "X9R6L7-4WYATQWJ9V"

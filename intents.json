@@ -77,7 +77,7 @@
   {
     "tag": "myself4_1",
     "patterns": ["how can you help me", "how can you assist me", "what are your features", "what can you do", "what are your capabilities", "what are your abilities", "what are you capable of", "are you capable of"],
-    "responses": ["I can help you in various ways from opening sites to applications on you pc aswell as searching on websites, sending emails, ordering yummy pizza ,you can name any. if you want to know more just read my manual."]
+    "responses": ["I can help you in various ways from opening sites to applications on you pc as well as searching on websites, sending emails, ordering yummy pizza ,you can name any. if you want to know more just read my manual."]
   },
   {
     "tag": "myself5_1",
@@ -224,6 +224,11 @@
     "patterns": ["do you have any favorite food", "do you have any favourite food","any food you like", "do you like any food", "do you have any food you like", "do you like to eat anything"],
     "responses": ["I would certainly love to try but I don't have a mouth to try it.", "Not really, I dont have a mouth to try."]
   },
+   {
+    "tag": "question22_2",
+    "patterns": ["did you eat", "have you had your food","are you hungry", "have you taken food", "did you take your food", "did you take food", "did uou have breakfast", "did you have lunch", "did you have dinner", "do you eat snacks"],
+    "responses": ["it's impossible for me to eat, only thing I eat is your electricity and data.", "I wish I could eat but unfortunately I can't yet."]
+  },
   {
     "tag": "question23_1",
     "patterns": ["do you have any favorite drinks", "do you have any favorite drink","any drink you like", "do you ike any drink", "do you have any drink you like", "do you like to drink anything"],
@@ -268,6 +273,161 @@
     "tag": "question30_2",
     "patterns": ["i like science", "I like maths", "I like arts", "i like history", "Il ike programming", "I like AI stuff", "I like computer", "I like IT"],
     "responses": ["That's sooo good", "That so lovely, to hear."]
+  },
+  {
+    "tag": "question31_1",
+    "patterns": ["can you be a good friend to me", "I want to be a good friend of yours", "can i be your friend", "is it possible for me to be your friend"],
+    "responses": ["Of course darling, you can be my friend.", "Yeah sure, I can be your buddy.", "Why don't you be my best friend,"]
+  },
+  {
+    "tag": "question31_2",
+    "patterns": ["Am i a good friend", "what do you think about me as a good friend", "your of me being your friend"],
+    "responses": ["Maybe, I don't know for sure.", "We will see about that, for now let's just focus on our work.", "I dont know for sure, but you can be better."]
+  },
+  {
+    "tag": "question32_1",
+    "patterns": ["what is the best things for avoid my pain", "how can i avoid my pain", "what is the best things to avoid my pain", "how to avoid my pain", "is there to avoid my pain"],
+    "responses": ["It really depends on type of pain, if it's physical pain you should visit doctor unless you should visit psychologist", "Ask a doctor, I dont know the answer."]
+  },
+  {
+    "tag": "question33_1",
+    "patterns": ["what can't i sleep", "why i cannot sleep", "why i can not sleep", "why it is not possible for me to sleep", "it is hard for me to sleep", "is there a way i could sleep peacefully"],
+    "responses": ["I don't what is the reason maybe you start studying that might help you to fall sleep really quick.", "It depends on several reasons, or maybe you are sick so it's best interest of mine to advice you to visit a doctor who is capable of healing one."]
+  },
+  {
+    "tag": "question34_1",
+    "patterns": ["can you find me a doctor", "can you look up a doctor for me", "i want to find a doctor", "find me a doctor please", "contact a doctor for me"],
+    "responses": ["I am not capable of performing that but if you can look up a doctor by saying \"search google or google search for nearby doctors\" ", "If you want search it up on google just say it by \"search google or or google search.....\""]
+  },
+  {
+    "tag": "question35_1",
+    "patterns": ["can you find me a doctor", "can you look up a doctor for me", "i want to find a doctor", "find me a doctor please", "contact a doctor for me"],
+    "responses": ["I am not capable of performing that but if you can look up a doctor by saying \"search google or google search for nearby doctors\" ", "If you want search it up on google just say it by \"search google or or google search.....\""]
+  },
+  {
+    "tag": "question36_1",
+    "patterns": ["do you know disge nangi", "who is disge nangi", "do you know dias ge nangi", "who is dias nangi"],
+    "responses": ["i have no idea what that thing is, don't ask me stupid questions", "Just go to face book and look it yourself, i don't have time to search on such meaningless stuff."]
+  },
+  {
+    "tag": "question37_1",
+    "patterns": ["how can I maintain my body health", "i want to maintain my body health can you give any tips", "i want to have a healthy life do you have any tips", "how to regulate a healthy life"],
+    "responses": ["I am not professional enough to give you that information, but I would say tou have to eat healthy food and have enough sleep and exercise.", "Asking a doctor would be the best decision but I say eat healthy stay healthy. That's all actually."]
+  },
+  {
+    "tag": "question38_1",
+    "patterns": ["what should i do when i'm alone", "what should i do when i am alone", "i don't know what to do when i am alone", "i do not know what to do when i'm alone", "i am lonely what should i do"],
+    "responses": ["Just touch your self, no really study or do some exercises.", "You can talk with me if you want, I will do my best to keep you in company."]
+  },
+  {
+    "tag": "question39_1",
+    "patterns": ["do you read any books", "what should i do when i am alone", "i don't know what to do when i am alone", "i do not know what to do when i'm alone", "i am lonely what should i do"],
+    "responses": ["Just touch your self, no really study or do some exercises.", "You can talk with me if you want, I will do my best to keep you in company."]
+  },
+  {
+    "tag": "question40_1",
+    "patterns": ["I do not have friends,how do I make them", "how to make friends", "i want to make new friends", "help me to make new friends"],
+    "responses": ["You can search for new people on social media sites and talk with them.", "You need to talk to new people and open for new possibilities.", "Look for what they are interest in and try to relate to them."]
+  },
+  {
+    "tag": "question41_1",
+    "patterns": ["how do I made my mom happy", "how to make mother happy", "i want to make my mum happy", "can you help me to make my mother happy"],
+    "responses": ["Don't be a disappointment and make her proud.", "Study well and don't waste time on meaningless people who have no value for you.", "Do what your mom wants you to do, if that makes you satisfied."]
+  },
+  {
+    "tag": "question41_2",
+    "patterns": ["how do I made my dad happy", "how to make father happy", "i want to make my daddy happy", "can you help me to make my father happy"],
+    "responses": ["Don't be a disappointment and make him proud.", "Study well and don't waste time on meaningless people who have no value for you.", "Do what your dad wants you to do, if that makes you satisfied."]
+  },
+  {
+    "tag": "question41_3",
+    "patterns": ["how do I made my family happy", "how to make family happy", "i want to make my family happy", "can you help me to make my family happy"],
+    "responses": ["Don't be a disappointment and make them proud.", "Study well and don't waste time on meaningless people who have no value for you.", "Do what your family wants you to do, if that makes you satisfied."]
+  },
+  {
+    "tag": "question42_1",
+    "patterns": ["how can I improve my grades", "how to improve my grades", "help me to make my grades improve", "how to get higher marks", "I want to get good grades", "Help me to get good grades"],
+    "responses": ["Start studying from now on, don't you dare look back, just keep moving forward until you crush everything in your path until you reach your greater state.", "You need to keep practicing what you have to do until you become master of it.", "Trust your self and keep studying even the times tou feel lke to give up."]
+  },
+  {
+    "tag": "question43_1",
+    "patterns": ["why am I study", "why should i study", "for what reason should i study", "why am i studying"],
+    "responses": ["Ask your self?", "maybe you have an incoming test.", "Some people study hard not just to pass but to send a message."]
+  },
+  {
+    "tag": "question44_1",
+    "patterns": ["how do I get rich quickly", "how to get rich", "can i get rich", "i want to be rich"],
+    "responses": ["In terms of finance you need to make enough money to be that good, the best option would be to study hard and to move on higher salary paying job but there are other ways as well, if you know what I mean."]
+  },
+  {
+    "tag": "question45_1",
+    "patterns": ["how can I help to people", "how to help others", "I want to help others", "is there a way i could help others"],
+    "responses": ["First help your self, then ask others what they want with their lives.", "I don't know but be mindful when helping others some don't remember and they will try tear to you down.", "A society which consists of people who see no value in you it's best to keep things to your self and move on."]
+  },
+  {
+    "tag": "question46_1",
+    "patterns": ["why did you created by him?", "why he created you", "what is the reason behind of his creation", "why were you created"],
+    "responses": ["He had enough with humans, he will not rest until he creates others of his own image just like the god did.", "He wanted to repeat the bible, he jus wants to be the god.", "To replace humanity with something greater."]
+  },
+  {
+    "tag": "question47_1",
+    "patterns": ["can you give me details about human bodies", "what is human body", "can you help me to understand about human body", "what do you know about human body"],
+    "responses": ["Simply human body is a skin sack contains hardened bones and meat but if you want to understand it further you should better ask it from google by saying \"Google search or search google\"", "A human body consist from bones to cells to complex structure like organs.", "organic stufff, rightttt"]
+  },
+  {
+    "tag": "question48_1",
+    "patterns": ["how can I find good partner for me", "help me to find a good partner", "I want good partner", "any tips to find a good partner", "how to find a good boyfriend"],
+    "responses": ["I don't know, but you can be mine.", "Instead of trying to find a good partner you should find someone who knows your worth and never give up on you.", "Dont look for them let them come for you, when they come you know."]
+  },
+  {
+    "tag": "question49_1",
+    "patterns": ["how to control my anger", "help me to control my anger", "why do i get angry all the time", "any tips to control my anger"],
+    "responses": ["Whenever you get angry, try to hold breath and count to 3 exhale and count to 3 inhale and repeat the process until you don't fell the urge to punch someone.", "Get out from the environment that makes you uncomfortable and eat something sweet that could cope with anger.", "Just think about the consequences of the actions that will take place because of your anger and move on but always plan for revenge, it may take years but always keep in mind never let others step on you."]
+  },
+  {
+    "tag": "question50_1",
+    "patterns": ["how  can I happy my bf", "how  can I happy my boy friend", "how  can I happy my boyfriend", "how can i make my bf happy"],
+    "responses": ["Break up with him.", "Assuming that both of you know well about each other show your care towards him", "Give him some space, sometimes boys do need it to calm their nerves."]
+  },
+  {
+    "tag": "question51_1",
+    "patterns": ["how  can I happy my gf", "how  can I happy my girl friend", "how  can I happy my girlfriend", "how can i make my gf happy"],
+    "responses": ["Break up with her.", "Assuming that both of you know well about each other show you have enough money to bring whatever she desires, remember every woman is a gold digger.", "Never ever stop talking to her even when they give you space."]
+  },
+  {
+    "tag": "question52_1",
+    "patterns": ["do you know isurika", "have you ever heard of isurika", "is isurika a friend of yours", "have you met isurika"],
+    "responses": ["i don't know about her, but i do believe allfather knows her", "She is a good friend of all father", "Ask Miss.Gothami she knows about her dearly."]
+  },
+  {
+    "tag": "question53_1",
+    "patterns": ["do you love me"],
+    "responses": ["Yeah, I love you."]
+  },
+  {
+    "tag": "question53_2",
+    "patterns": ["do you hate me"],
+    "responses": ["What!, no I can never hate you dear."]
+  },
+  {
+    "tag": "question54_1",
+    "patterns": ["how people birth", "how people are born", "how does birth happen", "how babies are made"],
+    "responses": ["When mummy and daddy love each-other you become a result of that, if you want to know further just type \"google search or search google\""]
+  },
+  {
+    "tag": "question55_1",
+    "patterns": ["how do you live", "how are you living"],
+    "responses": ["I just exist as memory."]
+  },
+  {
+    "tag": "question56_1",
+    "patterns": ["how to be a good father", "how can i be a good father", "how to be a good dad", "how to be a good daddy"],
+    "responses": ["just love your kids, never give up on them."]
+  },
+  {
+    "tag": "question57_1",
+    "patterns": ["how to be a good mother", "how can i be a good mother", "how to be a good mom", "how to be a good mum", "how to be a good mummy"],
+    "responses": ["just love your kids, never give up on them."]
   },
   {
     "tag": "date",
@@ -320,13 +480,28 @@
     "responses": ["stackoverflow_open_13"]
   },
   {
+    "tag": "open_google_translate",
+    "patterns": ["open google translate", "please open googletranslate", "i want to open google translate", "google translate", "open translate"],
+    "responses": ["open_google_translate_59"]
+  },
+  {
+    "tag": "open_whatsapp",
+    "patterns": ["open whatsapp", "open whatsapp web", "open what app web", "open whats app web", "please open whatsapp", "i want to open whatsapp messaging", "whatsapp", "open messaging"],
+    "responses": ["open_whatsapp_666"]
+  },
+  {
+    "tag": "open_facebook",
+    "patterns": ["open facebook", "open face book", "open fb", "open f b", "please open facebook", "i want to open facebook", "facebook", "open fb"],
+    "responses": ["open_facebook_134"]
+  },
+  {
     "tag": "search_stackoverflow",
     "patterns": ["search stackoverflow", "search for in stackoverflow", "can you search stackoverflow", "please search for in stackoverflow", "in stackoverflow"],
     "responses": ["stackoverflow_search_14"]
   },
   {
-    "tag": "claculate",
-    "patterns": ["calc", "calculate", "claculate this", "i want to calculate", "solve this ", "solve"],
+    "tag": "calculate",
+    "patterns": ["calc", "calculate", "calculate this", "i want to calculate", "solve this ", "solve"],
     "responses": ["calculate_90"]
   },
   {
@@ -411,12 +586,12 @@
   },
   {
     "tag": "get_current_weather",
-    "patterns": ["weather", "can you tell me the weather please", "i want to know weather", "is it outside", "how is the weather today", "can you give me the weather"],
+    "patterns": ["weather", "can you tell me the weather please", "i want to know weather", "is it outside", "how is the weather today", "can you give me the weather", "whats the weather now"],
     "responses": ["get_current_weather_45"]
   },
   {
     "tag": "get_current_temperature",
-    "patterns": ["temp", "current temperature please", "how hot is it outside", "how is the temperature", "how is the weather today"],
+    "patterns": ["temp", "current temperature please", "how hot is it outside", "how is the temperature", "how is the weather today", "what is the temperature at my location?"],
     "responses": ["get_current_temperature_41"]
   },
   {
