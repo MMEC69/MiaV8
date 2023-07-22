@@ -6,6 +6,11 @@
   },
   {
     "tag":"confused_unga-bunga_2",
+    "patterns": ["a", "b", "c", "d"],
+    "responses": [""]
+  },
+  {
+    "tag":"confused_unga-bunga_2",
     "patterns": [],
     "responses": ["I am confued", "i don't know what to say", "i am lost here, can you be more descriptive"]
   },
@@ -618,6 +623,16 @@
     "tag": "audio_decrease",
     "patterns": ["i want to decrease audio", "i want to decrease sound", "decrease audio", "decrease sound", "I cant hear properly can you decrease the sound please", "decrease it a bit"],
     "responses": ["audio_decrease_6"]
+  },
+  {
+    "tag": "question_game0_start",
+    "patterns": ["i want to play a game", "lets play a game", "can we play question and answer games", "can we play qa games", "i am bored i want to play a game"],
+    "responses": ["start_game_play_69"]
+  },
+  {
+    "tag": "question_game0_end",
+    "patterns": ["i want to exit a game", "i want to quit this game", "i have had enough playing this", "let's do something else", "exit", "quit"],
+    "responses": ["exit_game_play_69"]
   }
 
 

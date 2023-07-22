@@ -204,7 +204,7 @@ class MiaApplication:
 
 
         #pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
-        ttsg.gTTS_TTspeech(msg_returned_bot)
+        #ttsg.gTTS_TTspeech(msg_returned_bot)
 
 
         self.text_widget.see(END)

@@ -8,6 +8,7 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
 import Mia_features as mf
+import Trivia_game_mia_game0 as game0
 
 bot_name = "Mia"
 
@@ -60,6 +61,8 @@ def get_response(intents_list, intents_json):
 #global variables required for the below functions
 message = ""
 previous_response = ""
+special_response = ""
+count = 0
 
 def get_message(message):
     mia_respond = pass_response(message)
@@ -71,10 +74,37 @@ def pass_response(message):
     ints = predict_class(message)
     result = get_response(ints, intents)
     global previous_response
+    global special_response
+    global count
     while True:
         if result == "send_email_0":
             result = mf.sending_email_part1()
             previous_response = result
+            return result
+            break
+        elif result == "exit_game_play_69":
+            result = game0.game_part_4()
+            previous_response = result
+            special_response = ""
+            count = 0
+            return result
+            break
+        elif result == "start_game_play_69" or special_response == "next_answer_456":
+            result = game0.game_part_0()
+            previous_response = result
+            special_response = "next_question_456"
+            if count == 10:
+                special_response = ""
+                count =0
+                result = game0.game_part_4()
+                return result
+            count +=1
+            return result
+            break
+        elif (special_response == "next_question_456"):
+            result = game0.game_part_3(message)
+            previous_response = result
+            special_response = "next_answer_456"
             return result
             break
         elif result == "date_69":
@@ -250,6 +280,7 @@ def pass_response(message):
             previous_response = result
             return result
             break
+
         return result
 
 #please delete chatbot_model.h5, classes.pkl, words.pkl and rerun training.py if intents.json file updated and make sure to run train afterwards
