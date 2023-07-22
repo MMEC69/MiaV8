@@ -18,10 +18,10 @@ FONT_BOLD = 'Helvetica 20 bold'
 class MiaApplication:
 
     class ImageLabel(Label):
-        """
-        A Label that displays images, and plays them if they are gifs
-        :im: A PIL Image instance or a string filename
-        """
+        #"""
+        #A Label that displays images, and plays them if they are gifs
+        #:im: A PIL Image instance or a string filename
+        #"""
 
         def load(self, im):
             if isinstance(im, str):
@@ -76,8 +76,8 @@ class MiaApplication:
             height=True
         )
         self.window.configure(
-            width=780,
-            height=850,
+            width=735,
+            height=750,
             bg=BG_Msg_Box
         )
 
@@ -88,12 +88,12 @@ class MiaApplication:
                                 bg=BG_Text_Box,
                                 fg=FG_Msg_Box,
                                 font=FONT,
-                                padx=5,
-                                pady=5,
+                                padx=20,
+                                pady=20,
                                 bd=0
                                 )
         self.text_widget.place(relheight=0.925,
-                               relwidth=0.6,
+                               relwidth=0.6800,
                                rely=0.,
                                relx=0
                                )
@@ -114,65 +114,64 @@ class MiaApplication:
             bd = 0,
             justify=LEFT
         )
-        self.msg_entry.place(relwidth=0.8535, relheight=0.0750, rely=0.0085, relx=0.011)
+        self.msg_entry.place(relwidth=0.998, relheight=0.0750, rely=0.0085, relx=0.001)
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
 
         #send button
 
         #open image
-        self.send_button_icon = Image.open("icon\\send3.png")
+        #self.send_button_icon = Image.open("icon\\send3.png")
 
         #resize
-        self.send_button_icon_r = self.send_button_icon.resize((50, 50))
+        #self.send_button_icon_r = self.send_button_icon.resize((50, 50))
 
-        self.send_button_icon_rn = ImageTk.PhotoImage(self.send_button_icon_r)
-        send_button = Button(bottom_label,
-                             text="S",
-                             font=FONT_BOLD,
-                             activeforeground=BG_Text_Box,
-                             activebackground=BG_Msg_Box,
-                             command=lambda: self._on_enter_pressed(None),
-                             bd=0,
-                             image=self.send_button_icon_rn
-                             )
+        #self.send_button_icon_rn = ImageTk.PhotoImage(self.send_button_icon_r)
+        #send_button = Button(bottom_label,
+        #                    text="S",
+        #                     font=FONT_BOLD,
+        #                     activeforeground=BG_Text_Box,
+        #                     activebackground=BG_Msg_Box,
+        #                     command=lambda: self._on_enter_pressed(None),
+        #                     bd=0,
+        #                     image=self.send_button_icon_rn
+        #                     )
 
-        send_button.place(relx=0.9295,
-                          rely = 0.0085,
-                          relheight=0.0760,
-                          relwidth=0.0755
-                          )
+        #send_button.place(relx=0.9295,
+        #                  rely = 0.0085,
+        #                  relheight=0.0760,
+        #                  relwidth=0.0755
+        #                  )
 
         #mic button
 
         # open image
-        self.mic_button_icon = Image.open("icon\\microphone1.png")
+        #self.mic_button_icon = Image.open("icon\\microphone1.png")
 
         # resize
-        self.mic_button_icon_r = self.mic_button_icon.resize((50, 50))
+        #self.mic_button_icon_r = self.mic_button_icon.resize((50, 50))
 
-        self.mic_button_icon_rn = ImageTk.PhotoImage(self.mic_button_icon_r)
-        mic_button = Button(bottom_label,
-                            text="M",
-                            font=FONT_BOLD,
-                            activeforeground=BG_Text_Box,
-                            activebackground=BG_Msg_Box,
-                            command=lambda: self._on_mic_pressed(None),
-                            bd=0,
-                            image=self.mic_button_icon_rn
-                            )
-        mic_button.place(relx=0.8540,
-                         rely=0.0085,
-                         relheight=0.0760,
-                         relwidth=0.0755
-                         )
+        #self.mic_button_icon_rn = ImageTk.PhotoImage(self.mic_button_icon_r)
+        #mic_button = Button(bottom_label,
+        #                   text="M",
+        #                    font=FONT_BOLD,
+        #                    activeforeground=BG_Text_Box,
+        #                    activebackground=BG_Msg_Box,
+        #                    command=lambda: self._on_mic_pressed(None),
+        #                    bd=0,
+        #                    image=self.mic_button_icon_rn
+        #                    )
+        #mic_button.place(relx=0.8540,
+        #                 rely=0.0085,
+        #                 relheight=0.0760,
+        #                 relwidth=0.0755
+        #                  )
 
         # animated girl
         lbl = MiaApplication.ImageLabel(self.window, bd=0)
         lbl.place(
-            relx=0.6200,
-            rely=0.08,
-
+            relx=0.6600,
+            rely=0.015
         )
         lbl.load("anime_girl_banner_for_mia\\anime_girl1.gif")
 
