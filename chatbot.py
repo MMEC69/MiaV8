@@ -111,6 +111,10 @@ def pass_response(message):
             result = mf.today_date()
             return result
             break
+        elif result == "greet_127":
+            result = mf.greeting_in_timed_manner()
+            return result
+            break
         elif result == "time_69":
             result = mf.time_now()
             return result

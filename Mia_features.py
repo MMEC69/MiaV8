@@ -136,6 +136,34 @@ def search_wikipedia(user_message):
 #result = search_wikipedia("elon musk to wikipedia")
 #print(result)
 
+def greeting_in_timed_manner():
+    current_hour = datetime.datetime.now().hour
+
+    if current_hour>=0 and current_hour<4:
+        wishing_upon_greeting = "You haven't slept, Technically it's a good morning though? How are you doing?"
+        return wishing_upon_greeting
+    elif current_hour >= 4 and current_hour < 10:
+        wishing_upon_greeting = "Good morning love, How are you doing?, have you had your breakfast?"
+        return wishing_upon_greeting
+    elif current_hour >= 10 and current_hour < 12:
+        wishing_upon_greeting = "it's almost daytime, Have you had a cup of tea?, Any way Good morning love,"
+        return wishing_upon_greeting
+    elif current_hour >= 12 and current_hour < 15:
+        wishing_upon_greeting = "have you had lunch?, I am craving for some good lasgna now?, Good after noon, what are your plans at evening?,"
+        return wishing_upon_greeting
+    elif current_hour >= 15 and current_hour < 18:
+        wishing_upon_greeting = "Wow it's reached almost the end of the day?, how are you feeling?, Have you had a cup of tea?, Good evening by the way,"
+        return wishing_upon_greeting
+    elif current_hour >= 18 and current_hour < 22:
+        wishing_upon_greeting = "it's getting dark, I hope you have reached home by now, how was your day?, Good night by the way,"
+        return wishing_upon_greeting
+    elif current_hour >= 22 and current_hour < 0:
+        wishing_upon_greeting = "it's time to sleep, Good night sweet dreams"
+        return wishing_upon_greeting
+    else:
+        return "good day to you,"
+
+
 def open_youtube():
     youtube_url = "https://www.youtube.com"
     chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"

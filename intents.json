@@ -15,9 +15,14 @@
     "responses": ["I am confued", "i don't know what to say", "i am lost here, can you be more descriptive"]
   },
   {
-    "tag":"greetings",
+    "tag":"greetings1_1",
     "patterns":["hello", "hi", "hello there", "hi there", "whats up","hey", "Hi"],
     "responses":["Hello there!", "Hey I'm Mia", "What's up Bro"]
+  },
+  {
+    "tag":"greetings2_1",
+    "patterns":["good morning", "good evening", "good night", "good afternoon", "good day to you","gm", "gn"],
+    "responses":["greet_127"]
   },
   {
     "tag":"goodbye",
