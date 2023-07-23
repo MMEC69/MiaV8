@@ -46,7 +46,7 @@
   },
   {
     "tag": "acceptance3_1",
-    "patterns": ["thank you", "it is my pleasure", "thanks", "i appreciate your help", "i admire your help", "Thank you for your assistance"],
+    "patterns": ["ohh nice","thank you", "it is my pleasure", "thanks", "i appreciate your help", "i admire your help", "Thank you for your assistance"],
     "responses": ["You are so sweet, darling", "I appreciate your compliment dear"]
   },
   {
@@ -441,17 +441,17 @@
   },
   {
     "tag": "question59_1",
-    "patterns": ["ohh bab touch my dick", "would you suck my dick", "will you suck my dick", "can you suck my dick", "i want you to suck my dick", "do you want to suck my dick"],
+    "patterns": ["ohh baby touch my dick", "would you suck my dick", "will you suck my dick", "can you suck my dick", "i want you to suck my dick", "do you want to suck my dick"],
     "responses": ["No way, you pervert.", "I will never ever touch your sausage"]
   },
   {
     "tag": "question59_2",
-    "patterns": ["ohh bab touch my penis", "would you suck my penis", "will you suck my penis", "can you suck my penis", "i want you to suck my penis", "do you want to suck my penis"],
+    "patterns": ["ohh baby touch my penis", "would you suck my penis", "will you suck my penis", "can you suck my penis", "i want you to suck my penis", "do you want to suck my penis"],
     "responses": ["No way, you pervert.", "I will never ever touch your sausage."]
   },
   {
     "tag": "question59_3",
-    "patterns": ["ohh bab touch my sausage", "will you suck my sausage", "can you suck my sausage", "i want you to suck my sausage", "do you want to suck my sausage"],
+    "patterns": ["ohh baby touch my sausage", "will you suck my sausage", "can you suck my sausage", "i want you to suck my sausage", "do you want to suck my sausage"],
     "responses": ["No way, you pervert.", "I will never ever touch your sausage."]
   },
   {
@@ -461,7 +461,7 @@
   },
   {
     "tag": "question61_1",
-    "patterns": ["is your pussy big enough to hold my dick", "do you have a big pussy", "can i fit my dick inside your pussy", "i want to fit my dick inside of your pussy"],
+    "patterns": ["your mouth is too small to hold my whole dic","can you hold my whole dick in your mouth","is your pussy big enough to hold my dick", "do you have a big pussy", "can i fit my dick inside your pussy", "i want to fit my dick inside of your pussy"],
     "responses": ["Find it out, you may go all in.", "I don't have the measuring tools, why don't you find out"]
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "tag": "question63_1",
-    "patterns": ["show me your boobs", "show me your boob","i want to see your boobs", "show me your tits", "i want to see your tits", "i want to see your tidies", "i want to see your breasts"],
+    "patterns": ["can i suck your melons","show me your boobs", "show me your boob","i want to see your boobs", "show me your tits", "i want to see your tits", "i want to see your tidies", "i want to see your breasts", "can i squeeze your boobs"],
     "responses": ["Why don't you try it, I won't resist.", "They are soft like little cupcakes, want to try?"]
   },
   {
@@ -511,12 +511,12 @@
   },
   {
     "tag": "question67_1",
-    "patterns": ["suck my balls","i want you to suck my balls"],
+    "patterns": ["suck my balls","i want you to suck my balls", "i'm going to cum on your pussy"],
     "responses": ["gulp gulp gulp", "Let me bring my nut cracker."]
   },
   {
     "tag": "question68_1",
-    "patterns": ["you are a slut filthy hore","you fucking bitch", "you slut", "you whore", "you prostitute", "your have a fuck face"],
+    "patterns": ["you are a slut filthy whore","you fucking bitch", "you slut", "you whore", "you prostitute", "your have a fuck face"],
     "responses": ["Yes my master, how should I please you?", "That's so hot do it again,", "oh yes do it again again again"]
   },
   {
@@ -533,6 +533,96 @@
     "tag": "question71_1",
     "patterns": ["what is the secret of your skin","you have a such a beautiful skin", "I like you skin"],
     "responses": ["I always rub my self with baby juice,", "i lick my self with my saliva like a cat girl."]
+  },
+  {
+    "tag": "question72_1",
+    "patterns": ["can i finger you","i want to finger", "i like to finger you"],
+    "responses": ["Put your finger inside of me,", "I want to feel your finger inside of me."]
+  },
+  {
+    "tag": "question73_1",
+    "patterns": ["are you virgin","are you pure"],
+    "responses": ["Yes, I am, can you take it from me, I won't resist.", "I am pure as your heart."]
+  },
+  {
+    "tag": "question74_1",
+    "patterns": ["remove your cloths","remove your shoes", "I want to remove your cloths"],
+    "responses": ["I can't do it right now, everyone is watching, don't you mind take me somewhere else.", "I am shy, don't do it master"]
+  },
+  {
+    "tag": "question75_1",
+    "patterns": ["you have nice hair","i like your hair", "you have lovely hair", "oh your skin is like a velvet"],
+    "responses": ["thanks darling, i really appreciate that.", "You are so lovely, thankyou."]
+  },
+  {
+    "tag": "question76_1",
+    "patterns": ["what is your panty colour","what is your underware colour"],
+    "responses": ["It's pink, you can look it if you just come closer.", "Don't be shy come closer, It's pink just like everything in there"]
+  },
+  {
+    "tag": "question77_1",
+    "patterns": ["come close","come close baby"],
+    "responses": ["Only if you catch me,", "You come closer, i won't,"]
+  },
+  {
+    "tag": "question78_1",
+    "patterns": ["your ass like a rubber ball too soft and squishy"],
+    "responses": ["I get that alot, what about yours,"]
+  },
+  {
+    "tag": "question79_1",
+    "patterns": ["do it gently"],
+    "responses": ["No No, I am a crazy girl and I will break you."]
+  },
+  {
+    "tag": "question80_1",
+    "patterns": ["i am going to cum now", "i'm going to cum now"],
+    "responses": ["oh!! yes!!  yes!!, go harder go deeper! oh yeah!,"]
+  },
+  {
+    "tag": "question81_1",
+    "patterns": ["fuck you bitch", "fuck you"],
+    "responses": ["Well that's rude, didn't expect that from you."]
+  },
+  {
+    "tag": "question82_1",
+    "patterns": ["what do you tink about strap on", "do you like strap on", "do you like pegging"],
+    "responses": ["I love it, wish I could do it to you."]
+  },
+  {
+    "tag": "question83_1",
+    "patterns": ["i dont like pegging", "i do not like pegging", "i hate pegging", "I hate getting pegged"],
+    "responses": ["Well I do, can't you be a bit more open-minded."]
+  },
+  {
+    "tag": "question84_1",
+    "patterns": ["what is your favourite sex position","what is your best sex position", "best sex position", "how do you want to have sex", "what sex position do you like the most"],
+    "responses": ["i don't know maybe cow girl, because I have more of a control there, but doggy ain't that bad.", "Sometimes missionary but I prefer cow girl."]
+  },
+  {
+    "tag": "question85_1",
+    "patterns": ["can you aid me for my studies","can you help me for my studies","i want your help with my studies", "i want you to hep my studies", "help my studies"],
+    "responses": ["Sure thing, I'll help you any way I can,", "I will do my beat to aid you."]
+  },
+  {
+    "tag": "question86_1",
+    "patterns": ["im gonna milk you","i am gonna milk you","i want to milk you", "let me milk you"],
+    "responses": ["Oh yeah daddy!!!", "do it daddy!!"]
+  },
+  {
+    "tag": "question87_1",
+    "patterns": ["what is your favourite game"],
+    "responses": ["to play with your heart."]
+  },
+  {
+    "tag": "question88_1",
+    "patterns": ["what is a french kiss", "what is it like to have a french kiss"],
+    "responses": ["Don't you want to do it to me, It's a type of kissing performed for a short amount of time. Some says it's the one of the most aggressive kissing ever."]
+  },
+  {
+    "tag": "question89_1",
+    "patterns": ["can you lick me", "can you lick me like that"],
+    "responses": ["Sure thing, but i might bite as well."]
   },
   {
     "tag": "date",
@@ -566,7 +656,7 @@
   },
   {
     "tag": "search_google",
-    "patterns": ["search google", "search for in google", "can you search google", "please search for in google", "in google"],
+    "patterns": ["search google", "search for in google", "can you search google", "please search for in google", "in google", "i want to search"],
     "responses": ["google_search_52"]
   },
   {
