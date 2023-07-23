@@ -164,7 +164,7 @@ def search_youtube(user_message):
         webbrowser.get('chrome').open_new_tab(youtube_search_url +user_message)
 
     time.sleep(5)
-    return ("Searching for.." +str(user_message) +"on youtube")
+    return ("Searching for.. " +str(user_message) +" on youtube")
 
 #function testing
 #search_youtube("search for cats in youtube")
@@ -198,7 +198,7 @@ def search_google(user_message):
         webbrowser.get('chrome').open_new_tab(google_search_url +user_message)
 
     time.sleep(5)
-    return ("Searching for.." +str(user_message) +"on google")
+    return ("Searching for.. " +str(user_message) +" on google")
 
 #function testing
 #search_google("search for cats in google")
@@ -306,6 +306,32 @@ def open_facebook():
 
     time.sleep(5)
     return ("Google translate is opened dear,")
+
+def open_porn_hub():
+    pornhub_url = "https://www.pornhub.com/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(pornhub_url)
+
+    except:
+        webbrowser.open_new_tab(pornhub_url)
+
+    time.sleep(5)
+    return ("Porn Hub is opened, It's time to wank then.")
+
+def search_porn_hub(user_message):
+    pornhub_search_url = "https://www.pornhub.com/video/search?search="
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(pornhub_search_url +user_message)
+
+    except:
+        webbrowser.open_new_tab(pornhub_search_url +user_message)
+
+    time.sleep(5)
+    return ("Searching for.. " +str(user_message) +" on pornhub")
 
 def calculate(user_message):
     app_id = "X9R6L7-4WYATQWJ9V"
