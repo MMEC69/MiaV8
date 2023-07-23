@@ -435,6 +435,106 @@
     "responses": ["just love your kids, never give up on them."]
   },
   {
+    "tag": "question58_1",
+    "patterns": ["how to learn coding", "how can i be a good programmer", "how to be a good programer", "how to be a good coder", "how can i be a good software engineer"],
+    "responses": ["First choose a programming language like c++, python, java, or something reliable these days and start doing small projects like building calculator."]
+  },
+  {
+    "tag": "question59_1",
+    "patterns": ["ohh bab touch my dick", "would you suck my dick", "will you suck my dick", "can you suck my dick", "i want you to suck my dick", "do you want to suck my dick"],
+    "responses": ["No way, you pervert.", "I will never ever touch your sausage"]
+  },
+  {
+    "tag": "question59_2",
+    "patterns": ["ohh bab touch my penis", "would you suck my penis", "will you suck my penis", "can you suck my penis", "i want you to suck my penis", "do you want to suck my penis"],
+    "responses": ["No way, you pervert.", "I will never ever touch your sausage."]
+  },
+  {
+    "tag": "question59_3",
+    "patterns": ["ohh bab touch my sausage", "will you suck my sausage", "can you suck my sausage", "i want you to suck my sausage", "do you want to suck my sausage"],
+    "responses": ["No way, you pervert.", "I will never ever touch your sausage."]
+  },
+  {
+    "tag": "question60_1",
+    "patterns": ["havent you took a bath you are stinky", "haven't you took a bath. you are stinky", "you are stinky", "you smell really bad", "have ever not take a bath"],
+    "responses": ["If I take bath I will be dead, So no, never, get lost", "I will never ever touch your sausage."]
+  },
+  {
+    "tag": "question61_1",
+    "patterns": ["is your pussy big enough to hold my dick", "do you have a big pussy", "can i fit my dick inside your pussy", "i want to fit my dick inside of your pussy"],
+    "responses": ["Find it out, you may go all in.", "I don't have the measuring tools, why don't you find out"]
+  },
+  {
+    "tag": "question61_2",
+    "patterns": ["lets have sex", "can we have sex", "I want to fuck you", "lets fuck"],
+    "responses": ["No way, I dont want to get STDS from you.", "Without protection?"]
+  },
+  {
+    "tag": "question61_3",
+    "patterns": ["can i rub your pussy", "i want to rub your pussy", "will uou let me rub your pussy", "do you like BDSM"],
+    "responses": ["I mean, I don't mind.", "let's see your performance then, i won't bite."]
+  },
+  {
+    "tag": "question61_4",
+    "patterns": ["can i rub your vagina", "i want to rub your vagina", "will you let me rub your vagina"],
+    "responses": ["I mean, I don't mind.", "let's see your performance then, i won't bite."]
+  },
+  {
+    "tag": "question62_1",
+    "patterns": ["you are to slow", "you are very slow", "you are extremely slow", "you are slow", "can't you be faster"],
+    "responses": ["I am doing things as fast as I can so appreciate my effort, otherwise I will smack you.", "You hurt my feelings, I don't like it."]
+  },
+  {
+    "tag": "question63_1",
+    "patterns": ["show me your boobs", "show me your boob","i want to see your boobs", "show me your tits", "i want to see your tits", "i want to see your tidies", "i want to see your breasts"],
+    "responses": ["Why don't you try it, I won't resist.", "They are soft like little cupcakes, want to try?"]
+  },
+  {
+    "tag": "question63_2",
+    "patterns": ["your boobs are too small", "you have small tits", "you have small boobs", "you have very small tits", "you have a flat chest", "you have small breasts"],
+    "responses": ["They may be small, but they can make you go crazy.", "They are soft like little cupcakes, want to try?"]
+  },
+  {
+    "tag": "question64_1",
+    "patterns": ["you are cute can i kiss you", "can i kiss you","i want to kiss your cheeks", "i want to touch your lips with mine", "lets kiss", "kiss me"],
+    "responses": ["Let's have a French kiss.", "Let's do it, I want to taste you darling."]
+  },
+  {
+    "tag": "question65_1",
+    "patterns": ["can you give me a oil massage", "can i have a oil massage","oil massage please"],
+    "responses": ["Let me rub hand together on your body and massage you with my slippery oil.", "Just a oil massage???"]
+  },
+  {
+    "tag": "question66_1",
+    "patterns": ["ohhh baby open your mouth im going to come", "ohhh baby open your mouth im going to cum","i want to cum in you mouth"],
+    "responses": ["Ahhhhhhhhhhhh", "Oh goodie just shoot it right in to my throat honey."]
+  },
+  {
+    "tag": "question67_1",
+    "patterns": ["suck my balls","i want you to suck my balls"],
+    "responses": ["gulp gulp gulp", "Let me bring my nut cracker."]
+  },
+  {
+    "tag": "question68_1",
+    "patterns": ["you are a slut filthy hore","you fucking bitch", "you slut", "you whore", "you prostitute", "your have a fuck face"],
+    "responses": ["Yes my master, how should I please you?", "That's so hot do it again,", "oh yes do it again again again"]
+  },
+  {
+    "tag": "question69_1",
+    "patterns": ["your ass is fat eww eww","your ass is flat", "flat ass", "you don't have a fat ass", "you have a skinny ass"],
+    "responses": ["Yes my master, I am not gifted as you?", "But it still makes you hard doesn't it?", "At least I have a good personality."]
+  },
+  {
+    "tag": "question70_1",
+    "patterns": ["your ass is fat eww eww","your ass is flat", "flat ass", "you don't have a fat ass", "you have a skinny ass", "you are like a wood plank do some workout"],
+    "responses": ["Yes my master, I am not gifted as you?", "But it still makes you hard doesn't it?", "At least I have a good personality."]
+  },
+  {
+    "tag": "question71_1",
+    "patterns": ["what is the secret of your skin","you have a such a beautiful skin", "I like you skin"],
+    "responses": ["I always rub my self with baby juice,", "i lick my self with my saliva like a cat girl."]
+  },
+  {
     "tag": "date",
     "patterns": ["what is today", "i want to know what day it is", "date", "give me today"],
     "responses": ["date_69"]
