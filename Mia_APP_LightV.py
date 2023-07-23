@@ -1,10 +1,14 @@
 from tkinter import *
 from PIL import Image, ImageTk
+from pywin.scintilla.keycodes import get_vk
+
 import chatbot
 from chatbot import get_message, bot_name
 from itertools import count, cycle
 import TTS_pyttx as pyttx3tts
 import TTS_gtts as ttsg
+import speech_recorder
+from pynput import keyboard
 
 
 FG_Msg_Box = '#FFB6C1' #pink
@@ -178,17 +182,15 @@ class MiaApplication:
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
         self._insert_message(msg, "You")
-
-    #This function below need to be completed
-    def _on_mic_pressed(self, event):
-        msg = self.msg_entry.get()
-        self._insert_message(msg, "You")
+    #=================================speech_recognition_implementation=============================
 
 
+    # ===============================end speech_recognition_implementation==========================
     def _insert_message(self, msg, sender):
         if not msg:
             return
         self.msg_entry.delete(0, END)
+
 
         msg1 = f"{sender}: {msg}\n\n"
         self.text_widget.configure(cursor="arrow", state=NORMAL)
