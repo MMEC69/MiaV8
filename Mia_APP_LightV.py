@@ -21,6 +21,8 @@ FONT_BOLD = 'Helvetica 20 bold'
 
 class MiaApplication:
 
+
+
     class ImageLabel(Label):
         #"""
         #A Label that displays images, and plays them if they are gifs
@@ -61,6 +63,7 @@ class MiaApplication:
 
     def __init__(self):
         self.window = Tk()
+        #self.window.bind('<Control-Shift_L>', self.record_me)
         self._setup_main_window()
 
 
@@ -69,6 +72,8 @@ class MiaApplication:
 
     def _setup_main_window(self):
         self.window.title("Mia <3")
+
+
 
         icon1 = PhotoImage(file='icon\\mia_icon.png')
         #assigned the .png file to icon1 variable
@@ -122,6 +127,8 @@ class MiaApplication:
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
 
+        self.msg_entry.bind('<Control-Shift_L>', self.record_me)
+
         #send button
 
         #open image
@@ -161,10 +168,10 @@ class MiaApplication:
         #                    font=FONT_BOLD,
         #                    activeforeground=BG_Text_Box,
         #                    activebackground=BG_Msg_Box,
-        #                    command=lambda: self._on_mic_pressed(None),
+        #                    command=lambda: self.record_me,
         #                    bd=0,
         #                    image=self.mic_button_icon_rn
-        #                    )
+        #                   )
         #mic_button.place(relx=0.8540,
         #                 rely=0.0085,
         #                 relheight=0.0760,
@@ -183,14 +190,15 @@ class MiaApplication:
         msg = self.msg_entry.get()
         self._insert_message(msg, "You")
     #=================================speech_recognition_implementation=============================
-
-
+    def record_me(self, event):
+        recorded_speech = speech_recorder.take_speech()
+        self._insert_message(recorded_speech, "You")
+        return "recorded"
     # ===============================end speech_recognition_implementation==========================
     def _insert_message(self, msg, sender):
         if not msg:
             return
         self.msg_entry.delete(0, END)
-
 
         msg1 = f"{sender}: {msg}\n\n"
         self.text_widget.configure(cursor="arrow", state=NORMAL)
@@ -202,6 +210,7 @@ class MiaApplication:
         self.text_widget.configure(cursor="arrow", state=NORMAL)
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(cursor="arrow", state=DISABLED)
+
 
 
         #pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)

@@ -10,7 +10,12 @@
     "responses": [""]
   },
   {
-    "tag":"confused_unga-bunga_2",
+    "tag":"confused_unga-bunga_3",
+    "patterns": [],
+    "responses": ["I am confused", "i don't know what to say", "i am lost here, can you be more descriptive", "Pardon me, please say that again"]
+  },
+  {
+    "tag":"confused_unga-bunga_4",
     "patterns": [],
     "responses": ["I am confused", "i don't know what to say", "i am lost here, can you be more descriptive"]
   },

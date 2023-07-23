@@ -65,9 +65,9 @@ special_response = ""
 count = 0
 
 def get_message(message):
+    message = message.lower()
     mia_respond = pass_response(message)
     return mia_respond
-
 
 
 def pass_response(message):

@@ -5,6 +5,7 @@ from chatbot import get_message, bot_name
 from itertools import count, cycle
 import TTS_pyttx as pyttx3tts
 import TTS_gtts as ttsg
+import speech_recorder
 
 
 FG_Msg_Box = '#FFB6C1' #pink
@@ -118,6 +119,8 @@ class MiaApplication:
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
 
+        self.msg_entry.bind('<Control-Shift_L>', self.record_me)
+
         #send button
 
         #open image
@@ -179,11 +182,13 @@ class MiaApplication:
         msg = self.msg_entry.get()
         self._insert_message(msg, "You")
 
-    #This function below need to be completed
-    def _on_mic_pressed(self, event):
-        msg = self.msg_entry.get()
-        self._insert_message(msg, "You")
+    # =================================speech_recognition_implementation=============================
+    def record_me(self, event):
+        recorded_speech = speech_recorder.take_speech()
+        self._insert_message(recorded_speech, "You")
+        return "recorded"
 
+    # ===============================end speech_recognition_implementation==========================
 
     def _insert_message(self, msg, sender):
         if not msg:

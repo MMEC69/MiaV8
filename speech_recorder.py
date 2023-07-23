@@ -15,7 +15,7 @@ def take_speech():
         except Exception as e:
             #ttp.pyttxs3_TTspeech("Pardon me, please say that again")
             #ttg.gTTS_TTspeech("Pardon me, please say that again")
-            return "Pardon me, please say that again"
+            return " "
     return statement
 
 #z =take_speech()
