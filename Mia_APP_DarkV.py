@@ -6,6 +6,7 @@ from itertools import count, cycle
 import TTS_pyttx as pyttx3tts
 import TTS_gtts as ttsg
 import speech_recorder
+from threading import *
 
 
 FG_Msg_Box = '#FFB6C1' #pink
@@ -180,7 +181,10 @@ class MiaApplication:
 
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
-        self._insert_message(msg, "You")
+        msg_returned_bot = self._insert_message(msg, "You")
+
+        # pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
+        ttsg.gTTS_TTspeech(msg_returned_bot)
 
     # =================================speech_recognition_implementation=============================
     def record_me(self, event):
@@ -200,6 +204,7 @@ class MiaApplication:
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
+
         msg_returned_bot = get_message(msg)
         msg2 = f"{bot_name}: {msg_returned_bot}\n\n"
         self.text_widget.configure(cursor="arrow", state=NORMAL)
@@ -207,16 +212,17 @@ class MiaApplication:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
 
-        #pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
-        ttsg.gTTS_TTspeech(msg_returned_bot)
-
-
         self.text_widget.see(END)
-        #This is to make sure chat is set to the bottom of the conversation
+        # This is to make sure chat is set to the bottom of the conversation
+
+        return msg_returned_bot
+
 
 
 if __name__ == "__main__":
     app = MiaApplication()
     app.run()
+
+
 
 #something is not quite right

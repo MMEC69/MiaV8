@@ -174,7 +174,7 @@ def open_youtube():
     except:
         webbrowser.open_new_tab(youtube_url)
 
-    time.sleep(5)
+
     return ("Youtube is opened dear,")
 
 #function testing
@@ -184,6 +184,8 @@ def open_youtube():
 def search_youtube(user_message):
     youtube_search_url = "http://www.youtube.com/results?search_query="
     chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    user_message = user_message.replace("youtube", "")
+    user_message = user_message.replace("search", "")
     try:
         webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
         webbrowser.get('chrome').open_new_tab(youtube_search_url +user_message)
@@ -191,8 +193,8 @@ def search_youtube(user_message):
     except:
         webbrowser.get('chrome').open_new_tab(youtube_search_url +user_message)
 
-    time.sleep(5)
-    return ("Searching for.. " +str(user_message) +" on youtube")
+
+    return ("Youtube search for " +str(user_message))
 
 #function testing
 #search_youtube("search for cats in youtube")
@@ -208,7 +210,7 @@ def open_google():
     except:
         webbrowser.open_new_tab(google_url)
 
-    time.sleep(5)
+
     return ("google is opened dear,")
 
 #function testing
@@ -218,6 +220,8 @@ def open_google():
 def search_google(user_message):
     google_search_url = "https://www.google.com/search?q="
     chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    user_message = user_message.replace("search", "")
+    user_message = user_message.replace("google", "")
     try:
         webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
         webbrowser.get('chrome').open_new_tab(google_search_url +user_message)
@@ -225,8 +229,22 @@ def search_google(user_message):
     except:
         webbrowser.get('chrome').open_new_tab(google_search_url +user_message)
 
-    time.sleep(5)
-    return ("Searching for.. " +str(user_message) +" on google")
+
+
+    return ("Google search for " +str(user_message))
+
+def search_google_for_untentioned_responses(user_message):
+    google_search_url = "https://www.google.com/search?q="
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(google_search_url +user_message)
+
+    except:
+        webbrowser.get('chrome').open_new_tab(google_search_url +user_message)
+
+
+    return ("I may not be able to help but I'll search it on google, \ngoogle search for " +str(user_message))
 
 #function testing
 #search_google("search for cats in google")
@@ -242,7 +260,7 @@ def open_gmail():
     except:
         webbrowser.open_new_tab(gmail_url)
 
-    time.sleep(5)
+
     return ("gmail is opened dear,")
 
 #function testing
@@ -259,7 +277,7 @@ def open_github():
     except:
         webbrowser.open_new_tab(github_url)
 
-    time.sleep(5)
+
     return ("Github is opened dear,")
 
 #function testing
@@ -276,7 +294,7 @@ def open_stackoverflow():
     except:
         webbrowser.open_new_tab(stackoverflow_url)
 
-    time.sleep(5)
+
     return ("Stackoverflow is opened dear,")
 
 
@@ -290,8 +308,8 @@ def search_stackoverflow(user_message):
     except:
         webbrowser.open_new_tab(search_stackoverflow_url +user_message)
 
-    time.sleep(5)
-    return ("Searching for.." +str(user_message) +"on stackoverflow")
+
+    return ("Searching Stackoverflow for " +str(user_message))
 
 #function testing
 #search_stackoverflow("python library error")
@@ -306,7 +324,7 @@ def open_google_translate():
     except:
         webbrowser.open_new_tab(google_translate_url)
 
-    time.sleep(5)
+
     return ("Google translate is opened dear,")
 
 def open_whatsapp():
@@ -319,8 +337,8 @@ def open_whatsapp():
     except:
         webbrowser.open_new_tab(whatsapp_web_url)
 
-    time.sleep(5)
-    return ("Google translate is opened dear,")
+
+    return ("WhatsApp is opened dear,")
 
 def open_facebook():
     facebook_url = "https://www.facebook.com/"
@@ -332,7 +350,7 @@ def open_facebook():
     except:
         webbrowser.open_new_tab(facebook_url)
 
-    time.sleep(5)
+
     return ("Google translate is opened dear,")
 
 def open_porn_hub():
@@ -345,7 +363,7 @@ def open_porn_hub():
     except:
         webbrowser.open_new_tab(pornhub_url)
 
-    time.sleep(5)
+
     return ("Porn Hub is opened, It's time to wank then.")
 
 def search_porn_hub(user_message):
@@ -358,8 +376,61 @@ def search_porn_hub(user_message):
     except:
         webbrowser.open_new_tab(pornhub_search_url +user_message)
 
-    time.sleep(5)
-    return ("Searching for.. " +str(user_message) +" on pornhub")
+
+    return ("Searching pornhub for " +str(user_message))
+
+def open_hirunews():
+    hiru_news_url = "https://www.hirunews.lk/local-news.php?pageID=1"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(hiru_news_url)
+
+    except:
+        webbrowser.open_new_tab(hiru_news_url)
+
+
+    return ("Hiru news is opened,")
+
+def open_derana_news():
+    derana_news_url = "https://sinhala.adaderana.lk/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(derana_news_url)
+
+    except:
+        webbrowser.open_new_tab(derana_news_url)
+
+
+    return ("Ada Derana News is opened,")
+
+def open_dominos_pizza():
+    dominos_pizza_url = "https://m.dominoslk.com/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(dominos_pizza_url)
+
+    except:
+        webbrowser.open_new_tab(dominos_pizza_url)
+
+
+    return ("Order a pizza for your self,")
+
+def open_daraz():
+    daraz_url = "https://www.daraz.lk/"
+    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    try:
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+        webbrowser.get('chrome').open_new_tab(daraz_url)
+
+    except:
+        webbrowser.open_new_tab(daraz_url)
+
+
+    return ("Daraz is opened,")
+
 
 def calculate(user_message):
     app_id = "X9R6L7-4WYATQWJ9V"
@@ -756,3 +827,18 @@ def audio_decrease():
 
 
 #""" End of windoes volume control"""
+
+
+#"""Latest News"""
+
+
+
+#"""End Latest News"""
+
+
+#"""read a text file"""
+
+
+
+
+#"""end read a text file"""

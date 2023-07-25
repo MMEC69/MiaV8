@@ -188,7 +188,9 @@ class MiaApplication:
 
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
-        self._insert_message(msg, "You")
+        msg_returned_bot = self._insert_message(msg, "You")
+        # pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
+        ttsg.gTTS_TTspeech(msg_returned_bot)
     #=================================speech_recognition_implementation=============================
     def record_me(self, event):
         recorded_speech = speech_recorder.take_speech()
@@ -211,14 +213,11 @@ class MiaApplication:
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
-
-
-        #pyttx3tts.pyttxs3_TTspeech(msg_returned_bot)
-        ttsg.gTTS_TTspeech(msg_returned_bot)
-
-
         self.text_widget.see(END)
-        #This is to make sure chat is set to the bottom of the conversation
+        # This is to make sure chat is set to the bottom of the conversation
+
+        return msg_returned_bot
+
 
 
 if __name__ == "__main__":

@@ -755,6 +755,146 @@
     "responses": ["Yes, it is possible to change careers with a degree in a different field. \nTransferable skills, additional training, and a demonstration of relevant experience can help in transitioning to a new career"]
   },
   {
+    "tag": "question109_1",
+    "patterns": ["how does earning a degree contribute to personal growth", "how does degree affects personal growth", "how does degree effects personal status", "degree affects on personality development"],
+    "responses": ["Earning a degree contributes to personal growth by expanding knowledge, critical thinking abilities, and problem-solving skills. It also fosters personal development, self-discipline, and a sense of achievement."]
+  },
+  {
+    "tag": "question110_1",
+    "patterns": ["how many faculties in cinec campus", "number of faculties in cinec campus", "how many no of faculties in cinec campus", "how many number of faculty in cinec"],
+    "responses": ["There are in total 6 faculties."]
+  },
+  {
+    "tag": "question111_1",
+    "patterns": ["what are those faculties in cinec campus", "names of cinec campus faculties", "what are the faculties in cinec", "cinec faculties"],
+    "responses": ["They are, \n1. FACULTY OF MARITIME SCIENCES \n2. FACULTY OF MARINE ENGINEERING \n3. FACULTY OF ENGINEERING AND TECHNOLOGY \n4. FACULTY OF MANAGEMENT AND SOCIAL SCIENCES \n5. FACULTY OF HEALTH SCIENCES \n6. FACULTY OF HUMANITIES AND EDUCATION \nAnd that's all."]
+  },
+  {
+    "tag": "question112_1",
+    "patterns": ["when was cinec established", "when was cinec found", "the day cinec was built", "the day cinec began it's journey"],
+    "responses": ["CINEC Campus began it's journey since 1990.", "CINEC Campus was established in 1990."]
+  },
+  {
+    "tag": "question113_1",
+    "patterns": ["where is cinec", "cinec location", "where is cinec situated", "the city cinec in", "place where cinec is", "where is cinec located", "where can we find cinec"],
+    "responses": ["CINEC Campus is located in Malabe, a suburb of Colombo, Sri Lanka."]
+  },
+  {
+    "tag": "question114_1",
+    "patterns": ["how many students cinec take annually", "number of students taken annually", "how many students does cinec take per year", "the city cinec in", "place where cinec is", "where is cinec located", "where can we find cinec"],
+    "responses": ["CINEC caters to over 21,000 registered students annually.", "CINEC Campus takes about 21,000 students per year."]
+  },
+  {
+    "tag": "question115_1",
+    "patterns": ["number of certificates cinec offer", "how many certificates does cinec offer", "how many programs does cinec offer", "number of courses conducted by cinec"],
+    "responses": ["CINEC offers approximately 210 different Certificate from Diploma to Higher Diploma, Graduate, Postgraduate, and Doctoral programs."]
+  },
+  {
+    "tag": "question116_1",
+    "patterns": ["which governmental bodies approve courses offered by cinec", "the governmental bodies approve cinec programs", "who approves cinec courses", "is cinec courses valid", "is cinec courses approved by the government"],
+    "responses": ["The programs offered by CINEC are approved by the Government of Sri Lanka and universities in Australia, China, Germany, UK, USA, and TAFE College in Australia."]
+  },
+  {
+    "tag": "question117_1",
+    "patterns": ["which regions does cinec branches occupy", "where can we find cinec apart forom malabe", "branches of cinec", "other locations of cinec", "can we find cinec on different places"],
+    "responses": ["CINEC has branches in the Northern and Eastern capitals of Sri Lanka, as well as in a Colombo suburb."]
+  },
+  {
+    "tag": "question118_1",
+    "patterns": ["other countries cinec occupy", "which maritime institutes does cinec manage overseas", "apart from sri lanka what are the other countries cinec works"],
+    "responses": ["CINEC manages State Maritime Institutes in Seychelles and Fiji."]
+  },
+  {
+    "tag": "question119_1",
+    "patterns": ["what is the aim of managing maritime instites in other countries", "what is the aim of managing maritime instites in Seychelles and Fiji", "reason behind cinec operation on maritime institutes in foreign countries"],
+    "responses": ["The aim is to upgrade them to international standards and recognition."]
+  },
+  {
+    "tag": "question120_1",
+    "patterns": ["what is the aim of managing maritime instites in other countries", "what is the aim of managing maritime instites in Seychelles and Fiji", "reason behind cinec operation on maritime institutes in foreign countries"],
+    "responses": ["The aim is to upgrade them to international standards and recognition."]
+  },
+  {
+    "tag": "question121_1",
+    "patterns": ["fields of study cinec offer", "what are the other studies cinec offer", "other fields of study cinec offer", "fields of study cinec offer"],
+    "responses": ["CINEC offers fields of study such as Maritime Science, Marine Engineering, Engineering and Technology, Health Sciences, Aircraft Maintenance Engineering, IT, Logistics, International Transportation, Management, Marketing and Branding, Tourism and Hospitality, Law, HR, English Language and Education, Banking and Finance, Sports and Physical Education, and Vocational Training."]
+  },
+  {
+    "tag": "question122_1",
+    "patterns": ["which industries cinec establishes for training and research", "what are the companies does support cinec", "which companies company provide their training centers in cinec campus"],
+    "responses": ["MAS Holdings, Brandix, and Orange Electrical-Orel Corporation, which are among the largest apparel and electrical manufacturing companies in Sri Lanka, have established their research and training centers at CINEC Campus."]
+  },
+  {
+    "tag": "question123_1",
+    "patterns": ["Cinec facilities", "what are the other facilities does cinec offer", "cinec other facilities", "cinec other facility"],
+    "responses": ["CINEC Campus is equipped with state-of-the-art classroom facilities, advanced laboratory facilities, technical workshops, ship-in-campus, Learjet aircraft, and ship handling and engine room simulators. It also has residential facilities, a cafeteria, a swimming pool, a gymnasium, and other allied facilities."]
+  },
+  {
+    "tag": "question124_1",
+    "patterns": ["Cinec facilities", "what are the other facilities does cinec offer", "cinec other facilities", "cinec other facility", "what are the other kind of facilities do cinec has"],
+    "responses": ["CINEC Campus is equipped with state-of-the-art classroom facilities, advanced laboratory facilities, technical workshops, ship-in-campus, Learjet aircraft, and ship handling and engine room simulators. It also has residential facilities, a cafeteria, a swimming pool, a gymnasium, and other allied facilities."]
+  },
+  {
+    "tag": "question125_1",
+    "patterns": ["qualification level of lectures in cinec campus", "what are the qualification level of cinec campus"],
+    "responses": ["The lecturers at CINEC Campus are well qualified with postgraduate qualifications and many years of academic and industrial experience."]
+  },
+  {
+    "tag": "question126_1",
+    "patterns": ["awards that cinec received", "what are the awards cinec have received", "what are the certifications cinec received", "is cinec a certified campus"],
+    "responses": ["CINEC Campus has received ISO 9001:2015 Quality Management System Certification, the National Quality Award (NQA) for excellence in education services in four consecutive five-year terms (1999, 2004, 2009, and 2014), the Asia Pacific Quality Award for best-in-class in education (2010), the Global Performance Excellence Award - Education Organization (2012), and the Presidential Award for Education (2019)."]
+  },
+  {
+    "tag": "question127_1",
+    "patterns": ["how does cinec help students", "what skills does cinec campus impart to its students", "how well cinec build character of student", "how well does cinec with soft skills for children"],
+    "responses": ["CINEC Campus imparts soft skills for character building, personality development, and discipline to cultivate the competence of students to be work-ready in a competitive environment."]
+  },
+  {
+    "tag": "question128_1",
+    "patterns": ["how cinec positioned itself in international arena", "how cinec positioned itself in international area", "how cinec performs in international arena"],
+    "responses": ["CINEC Campus positions itself as an institution grooming the next generation to be competent in the international arena with globally recognized qualifications."]
+  },
+  {
+    "tag": "question129_1",
+    "patterns": ["which countries approve cinec campus programs", "countries approve cinec campus programs", "which universities approve cinec campus programs"],
+    "responses": ["The programs offered by CINEC Campus are approved by \nthe Government of Sri Lanka \nuniversities in \n\tAustralia \n\tChina \n\tGermany  \n\tUK \n\tUSA \nTAFE College in Australia"]
+  },
+  {
+    "tag": "question130_1",
+    "patterns": ["which industries support cinec through vocational", "which industries support cinec via vocational", "which company companies support cinec through vocational", "which industries support cinec vocational training projects"],
+    "responses": ["CINEC Campus supports government, private, and foreign organizations through special projects in vocational training around the country."]
+  },
+  {
+    "tag": "question131_1",
+    "patterns": ["how are practical sessions conducted at cinec campus", "what are the practical sessions conducted at cinec campus"],
+    "responses": ["Practical sessions at CINEC Campus are conducted in well-equipped laboratories, providing students with hands-on training."]
+  },
+  {
+    "tag": "question132_1",
+    "patterns": ["does industrial training provided to students", "is industrial training provided to cinec students"],
+    "responses": ["Yes, industrial training is provided to students at CINEC Campus, and facilities are provided for final year student projects to be carried out in research organizations under expert supervision."]
+  },
+  {
+    "tag": "question133_1",
+    "patterns": ["has cinec received quality management certifications", "cinec quality certifications", "does cinec have any quality certifications"],
+    "responses": ["Yes, CINEC Campus is enriched with ISO 9001:2015 Quality Management System Certification."]
+  },
+  {
+    "tag": "question134_1",
+    "patterns": ["how many times cinec won national quality award", "how many times cinec won national quality awards", "how many times cinec won nqa"],
+    "responses": ["CINEC Campus has won the National Quality Award (NQA) for excellence in education services in four consecutive five-year terms: 1999, 2004, 2009, and 2014."]
+  },
+  {
+    "tag": "question135_1",
+    "patterns": ["what did cinec win in 2012", "World Class - Global Performance Excellence Award - Education Organization cinec", "when did cinec receive World Class - Global Performance Excellence Award - Education Organization cinec"],
+    "responses": ["In 2012, CINEC Campus was awarded the 'World Class' - Global Performance Excellence Award - Education Organization."]
+  },
+  {
+    "tag": "question136_1",
+    "patterns": ["when did cinec receive get the prestigious president award for education"],
+    "responses": ["CINEC Campus achieved the prestigious Presidential Award for Education in 2019."]
+  },
+  {
     "tag": "advice1_1",
     "patterns": ["give me an advice", "i want an advice", "can you advice me"],
     "responses": ["Let me think,,,,,Oh yes always keep you loved one close and your enemies closer."]
@@ -828,6 +968,26 @@
     "tag": "open_facebook",
     "patterns": ["open facebook", "open face book", "open fb", "open f b", "please open facebook", "i want to open facebook", "facebook", "open fb"],
     "responses": ["open_facebook_134"]
+  },
+  {
+    "tag": "open_hirunews",
+    "patterns": ["open hiru news", "open hirunews", "please open hirunews", "please open hiru news", "i want to open hirunews", "i want to open hiru news", "hiru news", "hirunews"],
+    "responses": ["open_hirunews_234"]
+  },
+  {
+    "tag": "open_hirunews",
+    "patterns": ["open derana news", "open adaderana", "open ada derana","please open derana news", "please ada derana news","please open derana news", "i want to open derana news", "i want to open derana news", "ada derana news", "derana news"],
+    "responses": ["open_derana_news_332"]
+  },
+  {
+    "tag": "open_dominos_pizza",
+    "patterns": ["open dominos pizza", "i want to order a pizza", "order a pizza","please order pizza"],
+    "responses": ["open_dominos_pizza_333"]
+  },
+  {
+    "tag": "open_daraz",
+    "patterns": ["open daraz", "i want to open daraz", "please open daraz", "i want to buy something on daraz"],
+    "responses": ["open_daraz_334"]
   },
   {
     "tag": "search_stackoverflow",
@@ -964,9 +1124,6 @@
     "patterns": ["i want to exit a game", "i want to quit this game", "i have had enough playing this", "let's do something else", "exit", "quit"],
     "responses": ["exit_game_play_69"]
   }
-
-
-
 
 
 

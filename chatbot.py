@@ -71,11 +71,17 @@ def get_message(message):
 
 
 def pass_response(message):
-    ints = predict_class(message)
-    result = get_response(ints, intents)
     global previous_response
     global special_response
     global count
+    try:
+        ints = predict_class(message)
+        result = get_response(ints, intents)
+
+    except IndexError:
+        result = mf.search_google_for_untentioned_responses(message)
+        return result
+
     while True:
         if result == "send_email_0":
             result = mf.sending_email_part1()
@@ -95,10 +101,10 @@ def pass_response(message):
             special_response = "next_question_456"
             if count == 10:
                 special_response = ""
-                count =0
+                count = 0
                 result = game0.game_part_4()
                 return result
-            count +=1
+            count += 1
             return result
             break
         elif (special_response == "next_question_456"):
@@ -165,6 +171,22 @@ def pass_response(message):
             break
         elif result == "open_facebook_134":
             result = mf.open_facebook()
+            return result
+            break
+        elif result == "open_hirunews_234":
+            result = mf.open_hirunews()
+            return result
+            break
+        elif result == "open_derana_news_332":
+            result = mf.open_derana_news()
+            return result
+            break
+        elif result == "open_dominos_pizza_333":
+            result = mf.open_dominos_pizza()
+            return result
+            break
+        elif result == "open_daraz_334":
+            result = mf.open_daraz()
             return result
             break
         elif result == "calculate_90":
