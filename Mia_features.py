@@ -32,8 +32,7 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL #windows audio control
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume #windows audio control
 import math #windows audio control
-
-
+import docx
 
 
 def today_date():
@@ -837,8 +836,96 @@ def audio_decrease():
 
 
 #"""read a text file"""
+docx_file_name = ""
+def read_document_part_1():
+    read_document_part_4()
+    return "can you please tell me the documents name?"
+
+def read_document_part_2(user_message):
+    global docx_file_name
+    docx_file_name = user_message
+    try:
+        document = docx.Document('documents_to_be_read/' +user_message +'.docx')
+        return "How many number of paragraphs do you want to read?"
+    except:
+        read_document_part_4()
+        return "Unexpected error or maybe the file name is wrong, please check and try again."
+
+def read_document_part_3(user_message):
+    no_of_paragraphs_to_be_read = int(user_message)
+
+    document = docx.Document('documents_to_be_read/' +docx_file_name +'.docx')
+    list = []
+    try:
+        for x in range(no_of_paragraphs_to_be_read):
+            list.append(document.paragraphs[x].text)
+        read_document_part_4()
+        return " ".join(list)
+
+    except IndexError:
+        total_paragraph_length = len(document.paragraphs)
+        for x in range(total_paragraph_length):
+            list.append(document.paragraphs[x].text)
+        read_document_part_4()
+        return " ".join(list)
+
+def read_document_part_5(user_message):
+    docx_file_name = user_message
+    try:
+        document = docx.Document('documents_to_be_read/' +docx_file_name +'.docx')
+        list = []
+        total_paragraph_length = len(document.paragraphs)
+        for x in range(total_paragraph_length):
+            list.append(document.paragraphs[x].text)
+        read_document_part_4()
+        return " ".join(list)
+    except:
+        return "Unexpected issue, please check document name"
 
 
+def read_document_part_4():
+    global docx_file_name
+    docx_file_name = ""
 
+#z = read_document_part_5("sample")
+#print(z)
 
 #"""end read a text file"""
+
+
+#=================="""Write a text file"""=========================
+
+writing_document = docx.Document()
+def write_a_document_part_1():
+    return "please type the body of the document."
+
+def write_a_document_part_2(user_message):
+    text_body = writing_document.add_paragraph(user_message)
+    return "Give a name to this file."
+
+def write_a_document_part_3(user_message):
+    written_text_file_name = user_message
+    writing_document.save('documents_to_be_written/' +user_message +'.docx')
+    return 'File has been saved, anything else?'
+
+
+
+#====================="""End Write a text file"""===============================
+
+
+#===================="""Take note"""=================================
+def take_note_part_1():
+    return "please type your note,"
+def take_note_part_2(user_message):
+    note = docx.Document()
+    text_body = note.add_paragraph(user_message)
+    now = datetime.datetime.now()
+    day_now = now.day
+    month_now = now.month
+    year_now = now.year
+    file_name = str(day_now) +"_" +str(month_now) +"_" +str(year_now) +"_Note"
+    note.save('taken_notes/' +file_name +'.docx')
+    return "Note has been saved, Anything else darling?"
+
+take_note_part_2("dadawdadadaw")
+#===================="""End Take note"""=================================

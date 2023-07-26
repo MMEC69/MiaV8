@@ -6,7 +6,7 @@
   },
   {
     "tag":"confused_unga-bunga_2",
-    "patterns": ["a", "b", "c", "d"],
+    "patterns": ["a", "b", "c", "d", "1", "2", "3", "4"],
     "responses": [""]
   },
   {
@@ -1123,6 +1123,21 @@
     "tag": "question_game0_end",
     "patterns": ["i want to exit a game", "i want to quit this game", "i have had enough playing this", "let's do something else", "exit", "quit"],
     "responses": ["exit_game_play_69"]
+  },
+  {
+    "tag": "read_a_document",
+    "patterns": ["i want to read a document", "lets read a document", "can you read a document", "read a docx file", "read a doc file", "read a document"],
+    "responses": ["read_docx_99"]
+  },
+  {
+    "tag": "write_a_document",
+    "patterns": ["i want to write a document", "lets write a document", "can you write a document", "write a docx file", "write a doc file", "write a document"],
+    "responses": ["write_docx_98"]
+  },
+  {
+    "tag": "take_a_note",
+    "patterns": ["i want to write a note", "lets write a note", "can you take a note", "write a note file", "i want to take a note", "write this down"],
+    "responses": ["take_note_90"]
   }
 
 

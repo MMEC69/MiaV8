@@ -74,6 +74,28 @@ def pass_response(message):
     global previous_response
     global special_response
     global count
+
+    while True:
+        if special_response == "take_doc_file_name_and_read_310":
+            result = mf.read_document_part_5(message)
+            special_response = ""
+            return result
+
+        elif special_response == "take_doc_body_990":
+            result = mf.write_a_document_part_2(message)
+            special_response = "take_doc_name_87"
+            return result
+
+        elif special_response == "take_doc_name_87":
+            result = mf.write_a_document_part_3(message)
+            special_response = ""
+            return result
+        elif special_response == "take_note_390":
+            result = mf.take_note_part_2(message)
+            special_response = ""
+            return result
+        break
+
     try:
         ints = predict_class(message)
         result = get_response(ints, intents)
@@ -83,7 +105,24 @@ def pass_response(message):
         return result
 
     while True:
-        if result == "send_email_0":
+        if result == "read_docx_99":
+            result = mf.read_document_part_1()
+            special_response = "take_doc_file_name_and_read_310"
+            return result
+            break
+        elif result == "write_docx_98":
+            result = mf.write_a_document_part_1()
+            previous_response = result
+            special_response = "take_doc_body_990"
+            return result
+            break
+        elif result == "take_note_90":
+            result = mf.take_note_part_1()
+            previous_response = result
+            special_response = "take_note_390"
+            return result
+            break
+        elif result == "send_email_0":
             result = mf.sending_email_part1()
             previous_response = result
             return result
