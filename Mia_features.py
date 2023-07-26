@@ -33,6 +33,7 @@ from comtypes import CLSCTX_ALL #windows audio control
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume #windows audio control
 import math #windows audio control
 import docx
+import requests
 
 
 def today_date():
@@ -929,3 +930,13 @@ def take_note_part_2(user_message):
 
 #take_note_part_2("dadawdadadaw")
 #===================="""End Take note"""=================================
+
+#"""News"""(incomplete)
+
+api_key = "883763f1bfa04f06b5e8bdde51997010"
+
+def news():
+    main_url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=883763f1bfa04f06b5e8bdde51997010"
+
+
+#"""End News"""
