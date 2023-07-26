@@ -927,5 +927,5 @@ def take_note_part_2(user_message):
     note.save('taken_notes/' +file_name +'.docx')
     return "Note has been saved, Anything else darling?"
 
-take_note_part_2("dadawdadadaw")
+#take_note_part_2("dadawdadadaw")
 #===================="""End Take note"""=================================
